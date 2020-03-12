@@ -48,46 +48,44 @@ def make_xml_file(scraped_folder, filename, title, review_date, review_language,
 
 
 
-def make_csv_file(title, review_date, review_language, review_id, author, rating, text):
+def make_csv_file(title, review_date, review_language, review_id, author, rating, text, filename):
     
-    with open(r'scrapes_goodreads.csv', 'a', newline='', encoding='utf-8') as csvfile:
+    with open(filename + '_scrapes_goodreads.csv', 'a', newline='', encoding='utf-8') as csvfile:
         fieldnames = ['review_id', 'title', 'review_date', 'review_language', 'author', 'rating', 'text']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writerow({'review_id': review_id,'title':title, 'review_date':review_date, \
         'review_language': review_language, 'author': author, 'rating':rating, 'text':text})
 
 
-def read_csv_file():
+def read_csv_file(filename):
 
-    with open('scrapes_goodreads.csv', newline='', encoding='utf-8') as f:
+    with open(filename + '_scrapes_goodreads.csv', newline='', encoding='utf-8') as f:
         reader = csv.reader(f)
         data = list(reader)
         return data
 
 
 
-def scrape_page(review_language):
+def scrape_page(review_language, filename, title):
 
-    title='The dinner'
-    filename='dinner'
-    edition_language='eng' # No existing variable in Goodreads as reviews are not attached to specific edition???
-
+    #edition_language='eng' # will be retrieved from the editions scraper
     review_id=''
     author=''
-    author_gender=''
+    # author_gender=''
     rating=''
     scraped_folder='scraped_dinner'
     counter=0
     reviews=driver.find_elements_by_class_name('friendReviews')
 
-    # read the csv with reviews that are already done
-    try:
-        existing_reviews=read_csv_file()
-    except:
-        existing_reviews=[]
-    
    
     for review in reviews:
+
+        # read the csv with reviews that are already done, 
+        try:
+            existing_reviews=read_csv_file(filename)
+        except:
+            existing_reviews=[]
+
         content=review.find_elements_by_css_selector("[id^='freeText']")
         review_id=review.find_element_by_class_name('review').get_attribute("id")
         split= review_id.split("_")
@@ -131,13 +129,14 @@ def scrape_page(review_language):
                 break
 
         if review_exists == False:
-            make_csv_file(title, review_date, review_language, review_id, author, rating, text)
+            make_csv_file(title, review_date, review_language, review_id, author, rating, text, filename)
             make_xml_file(scraped_folder, filename, title, review_date, review_language, review_id, author, rating, text)
             print('Created new line in csv, created xml file')
 
         counter+=1
 
         print('-------------------------------')
+        
 
 
 def scrape_loop(driver, review_language, more_position):
@@ -167,7 +166,7 @@ def scrape_loop(driver, review_language, more_position):
     for x in range(0, 10):
         time.sleep(3)
 
-        scrape_page(review_language)
+        scrape_page(review_language, filename, title)
 
         try:
             next_button=driver.find_element_by_class_name('next_page')
@@ -180,8 +179,12 @@ def scrape_loop(driver, review_language, more_position):
 
 
 
-edition_url='https://www.goodreads.com/book/show/40718205-the-dinner'
 
+
+filename='dinner'
+title='The dinner'
+
+edition_url='https://www.goodreads.com/book/show/40718205-the-dinner' # this will be retrieve from the list of scraped editions itterating through the csv
 
 languages=['az','id','ca','da','de','et', 'en', 'es', 'fr', 'it','lv','lt', 'hu', 'nl', 'no', 'pl', 'pt', 'ru', 'ro', 'sk','sl','fi', \
     'sv', 'vi', 'tr', 'hr', 'is','cs', 'el', 'bg', 'mk', 'uk','he', 'ar', 'fa', 'th', 'ka']
@@ -189,23 +192,23 @@ languages=['az','id','ca','da','de','et', 'en', 'es', 'fr', 'it','lv','lt', 'hu'
 more_position=''
 
 # looping and scraping the languages
-driver = webdriver.Firefox(executable_path=r'geckodriver\geckodriver.exe')
-driver.get(edition_url)
+# driver = webdriver.Firefox(executable_path=r'geckodriver\geckodriver.exe')
+# driver.get(edition_url)
 
-for review_language in languages:
-    print('####################################')
-    print('language = ' + review_language)
+# for review_language in languages:
+#     print('####################################')
+#     print('language = ' + review_language)
 
-    scrape_loop(driver, review_language, more_position)
+#     scrape_loop(driver, review_language, more_position)
 
 
-driver.close()
+# driver.close()
 
 
 
 
 # scraping reviews based on rating
-for more_position in range(3, 6):
+for more_position in range(1, 6):
     #needs fresh driver for new round
     print('#####################################################')
     print(more_position)
@@ -219,3 +222,6 @@ for more_position in range(3, 6):
     scrape_loop(driver,review_language, more_position)
     driver.close()
 
+
+
+#scrape_loop(driver,review_language, more_position)
