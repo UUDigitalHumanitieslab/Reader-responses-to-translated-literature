@@ -66,7 +66,7 @@ def read_csv_file(filename):
 
 
 
-def scrape_page(review_language, filename, title):
+def scrape_page(driver, review_language, filename, title):
 
     #edition_language='eng' # will be retrieved from the editions scraper
     review_id=''
@@ -145,7 +145,6 @@ def scrape_loop(driver, review_language, more_position):
     ddelement= Select(driver.find_element_by_id('language_code'))
     ddelement.select_by_value(review_language)
 
-
     if more_position != '': 
         time.sleep(2)
 
@@ -166,7 +165,7 @@ def scrape_loop(driver, review_language, more_position):
     for x in range(0, 10):
         time.sleep(3)
 
-        scrape_page(review_language, filename, title)
+        scrape_page(driver, review_language, filename, title)
 
         try:
             next_button=driver.find_element_by_class_name('next_page')
@@ -205,22 +204,21 @@ more_position=''
 # driver.close()
 
 
+def scrape():
+    # scraping reviews based on rating
+    for more_position in range(1, 6):
+        #needs fresh driver for new round
+        print('#####################################################')
+        print(more_position)
+        
+        driver = webdriver.Firefox(executable_path=r'geckodriver\geckodriver.exe')
+        driver.get(edition_url)
 
+        #more_position=5 # 1=5 stars, 2 =4 stars, 3=3 stars, 4 =2 stars, 5 =1 star
+        review_language='' # must be empty, select on rating works only with all langugaes
 
-# scraping reviews based on rating
-for more_position in range(1, 6):
-    #needs fresh driver for new round
-    print('#####################################################')
-    print(more_position)
-    
-    driver = webdriver.Firefox(executable_path=r'geckodriver\geckodriver.exe')
-    driver.get(edition_url)
-
-    #more_position=5 # 1=5 stars, 2 =4 stars, 3=3 stars, 4 =2 stars, 5 =1 star
-    review_language='' # must be empty, select on rating works only with all langugaes
-
-    scrape_loop(driver,review_language, more_position)
-    driver.close()
+        scrape_loop(driver,review_language, more_position)
+        driver.close()
 
 
 
