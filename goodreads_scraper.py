@@ -11,9 +11,13 @@ import os.path
 from os import path
 
 ###########################################################################################################
-# This script scrapes all the languages in the Goodreads selectbox, and will scrape the 5 - 1 star ratings. 
+# This script scrapes all the languages in the Goodreads selectbox, and will scrape the 5 - 1 star ratings. Also it will scrape 'this edition'.
+# The star ratings are scraped for 'this edition'. But this seems not to work really well, as a lot of ratings are showing the text 'review of another edition'
+# so the only reviews that are certaint for this edition are the ones marked with scrape_type: 'edition'
 # Data are stored in a csv file. Dat are appended if the review id is not yet in the csv
 # for each review an xml file is made and stored in the folder as specified in 'scraped_folder' variable.
+# for every edition a csv file is created, as it can hold thousands of reviews. A general CSV stores al the review id's 
+# and is used to check if a review already was stored, to prevent double reviews. 
 ###########################################################################################################
 
 # For each review, store at least the following (not a complete list):
@@ -36,7 +40,7 @@ def read_editions_csv(filename):
 
 
 
-def make_xml_file(filename, title, review_date, review_language, review_id, author, rating, text, edition, edition_language):
+def make_xml_file(filename, title, review_date, review_language, review_id, author, rating, text, edition, edition_language, scrape_type):
     scraped_folder=filename
 
     if not path.exists(scraped_folder): 
@@ -46,12 +50,12 @@ def make_xml_file(filename, title, review_date, review_language, review_id, auth
         except FileExistsError:
             print("Directory " , scraped_folder,  " already exists")
 
-
     xml="<scrape>"
     xml+="<title>" + title +"</title>"
     xml+="<edition>" + edition +"</edition>"
     xml+="<edition_language>" + edition_language +"</edition_language>"
     xml+="<review_language>" + review_language +"</review_language>"
+    xml+="<scrape_type>" + scrape_type +"</scrape_type>"
     xml+="<review_date>" + review_date +"</review_date>"
     xml+="<review_id>" + review_id + "</review_id>"
     xml+="<author>" + author +  "</author>"
@@ -69,47 +73,51 @@ def make_xml_file(filename, title, review_date, review_language, review_id, auth
 
 
 
-def make_csv_file(title, review_date, review_language, review_id, author, rating, text, filename, edition_language):
+def make_csv_file(title, review_date, review_language, review_id, author, rating, text, filename, edition_language, scrape_type):
     
-
-    with open(filename + '_scrapes_goodreads.csv', 'a', newline='', encoding='utf-8') as csvfile:
-        fieldnames = ['review_id', 'title', 'review_date', 'review_language', 'edition_language', 'author', 'rating', 'text']
+    with open('CSV/' + filename + '_scrapes_goodreads.csv', 'a', newline='', encoding='utf-8') as csvfile:
+        fieldnames = ['review_id', 'title', 'review_date', 'review_language', 'edition_language','scrape_type', 'author', 'rating', 'text']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         if not path.exists(filename + '_scrapes_goodreads.csv'): #werkt niet
             writer.writeheader()
             print('csv created with header')
         writer.writerow({'review_id': review_id,'title':title, 'review_date':review_date, \
-        'review_language': review_language, 'edition_language':edition_language, 'author': author, 'rating':rating, 'text':text})
+        'review_language': review_language, 'edition_language':edition_language, 'scrape_type':scrape_type, 'author': author, 'rating':rating, 'text':text})
+    
+    #csv for checking if review already was scraped 
+    with open('check_all_scrapes/all_scrapes_goodreads.csv', 'a', newline='', encoding='utf-8') as f:
+        fieldnames = ['review_id', 'title']
+        writer2 = csv.DictWriter(f, fieldnames=fieldnames)
+        writer2.writerow({'review_id': review_id,'title':title})
+        
+        
 
-
-def read_csv_file(filename):
-
-    with open(filename + '_scrapes_goodreads.csv', newline='', encoding='utf-8') as f:
+def read_csv_file():
+    with open('check_all_scrapes/all_scrapes_goodreads.csv', newline='', encoding='utf-8') as f:
         reader = csv.reader(f)
         data = list(reader)
         return data
 
 
 
-def scrape_page(review_language, filename, title, edition, edition_language):
+def scrape_page(driver, review_language, filename, title, edition, edition_language, scrape_type):
 
     review_id=''
     author=''
-    # author_gender=''
     rating=''
-    #scraped_folder='scraped_dinner'
     counter=0
+
+    time.sleep(1)
     reviews=driver.find_elements_by_class_name('friendReviews')
 
-   
     for review in reviews:
-
+       
         # read the csv with reviews that are already done, 
         try:
-            existing_reviews=read_csv_file(filename)
+            existing_reviews=read_csv_file()
         except:
             existing_reviews=[]
-
+        
         content=review.find_elements_by_css_selector("[id^='freeText']")
         review_id=review.find_element_by_class_name('review').get_attribute("id")
         split= review_id.split("_")
@@ -135,12 +143,16 @@ def scrape_page(review_language, filename, title, edition, edition_language):
         print(author.encode("utf-8"))
         print(rating)
        
-        if len(content) > 1:
-            #there is a hidden part that forms the complete text. Is the second element
-            text=content[1].get_attribute('textContent')
-        else:
-            #if there is no 'more' link, all the text is in the first element
-            text=content[0].text
+        try:
+            if len(content) > 1:
+                #there is a hidden part that forms the complete text. Is the second element
+                text=content[1].get_attribute('textContent')
+            else:
+                #if there is no 'more' link, all the text is in the first element
+                text=content[0].text
+        except:
+            text='could not scrape'
+
 
         text = text.replace('\r','\n')# replace line breaks that cause trouble 
         
@@ -155,8 +167,8 @@ def scrape_page(review_language, filename, title, edition, edition_language):
                 break
 
         if review_exists == False:
-            make_csv_file(title, review_date, review_language, review_id, author, rating, text, filename, edition_language)
-            make_xml_file(filename, title, review_date, review_language, review_id, author, rating, text, edition, edition_language)
+            make_csv_file(title, review_date, review_language, review_id, author, rating, text, filename, edition_language, scrape_type)
+            make_xml_file(filename, title, review_date, review_language, review_id, author, rating, text, edition, edition_language, scrape_type)
             print('Created new line in csv, created xml file')
 
         counter+=1
@@ -165,7 +177,7 @@ def scrape_page(review_language, filename, title, edition, edition_language):
         
 
 
-def scrape_loop(driver, review_language, more_position, edition, edition_language):
+def scrape_loop(driver, review_language, more_position, edition, edition_language, scrape_type):
 
     time.sleep(2)
     ddelement= Select(driver.find_element_by_id('language_code'))
@@ -181,18 +193,22 @@ def scrape_loop(driver, review_language, more_position, edition, edition_languag
 
         tooltip=driver.find_element_by_class_name("tooltip")
         stars_links=tooltip.find_elements_by_class_name("loadingLink")
-        time.sleep(4)
-        print(len(stars_links))
+        time.sleep(3)
+        print('must be 10, otherwise element nog found: ', len(stars_links))
+
+        # first click position 7; this edition,
+        driver.execute_script("arguments[0].click();", stars_links[7]) # click with javascript, as the element ccould be hidden
+
+        time.sleep(2)
 
         # list more filter, on 0=all, 1= 5 stars, 2 = 4stars, 3 = 3 stars, 4 = 2 stars, 5 = 1 star, 6 = editions all, 7 = this edition, 8 = content any, 9 = text-only
         driver.execute_script("arguments[0].click();", stars_links[more_position]) # click with javascript, as the element ccould be hidden
 
 
-
     for x in range(0, 10):
-        time.sleep(3)
+        time.sleep(4)
 
-        scrape_page(review_language, filename, title, edition, edition_language)
+        scrape_page(driver, review_language, filename, title, edition, edition_language, scrape_type)
 
         try:
             next_button=driver.find_element_by_class_name('next_page')
@@ -203,16 +219,60 @@ def scrape_loop(driver, review_language, more_position, edition, edition_languag
 
 
 
+#funtions for scraping on edition, language and star-ratings
+
+def edition_scrape(edition_url, edition, edition_language):
+    scrape_type='edition'
+    more_position=7 # integer, is position of the 'this edition' selection
+    review_language='' # empty for all, must be all to get selection pane with the 'edition' option
+    driver = webdriver.Firefox(executable_path=r'geckodriver\geckodriver.exe')
+    driver.get(edition_url)
+    scrape_loop(driver,review_language, more_position, edition, edition_language, scrape_type)
+    driver.close()
+
+
+def language_scrape(driver, edition_url, edition, edition_language):
+    scrape_type='language'
+    languages=['az','id','ca','da','de','et', 'en', 'es', 'fr', 'it','lv','lt', 'hu', 'nl', 'no', 'pl', 'pt', 'ru', 'ro', 'sk','sl','fi', \
+    'sv', 'vi', 'tr', 'hr', 'is','cs', 'el', 'bg', 'mk', 'uk','he', 'ar', 'fa', 'th', 'ka']
+    more_position='' # empty so the scraper will choose the language selection part
+    driver = webdriver.Firefox(executable_path=r'geckodriver\geckodriver.exe')
+    driver.get(edition_url)
+    for review_language in languages:
+        print('####################################')
+        print('language = ' + review_language)
+        scrape_loop(driver, review_language, more_position, edition, edition_language, scrape_type)
+    driver.close()
+
+
+def stars_scrape(edition_url, edition, edition_language):
+    scrape_type= 'stars'
+
+    # more_position: 1 =5 stars, 2 =4 stars, 3=3 stars, 4 =2 stars, 5 =1 star
+    # a lot of errors here: element not found, caused by slow internet connection? Seems random problem
+    for more_position in range(4, 6):
+        #needs fresh driver for new round. 
+        print('#####################################################')
+        print(more_position)
+        driver = webdriver.Firefox(executable_path=r'geckodriver\geckodriver.exe')
+        driver.get(edition_url)
+        review_language='' # must be empty, select on rating works only with all langugaes
+        scrape_loop(driver, review_language, more_position, edition, edition_language, scrape_type)
+        driver.close() # for each round a new driver is started, to secure the starsrating-pane is available
+
+
 
 
 
 #choose edition to scrape
 title='The Dinner' #for in the csv and XML files
-edition_from_list=1
+
+# change this to get a new edition from the list
+edition_from_list=3
+
+# driver = webdriver.Firefox(executable_path=r'geckodriver\geckodriver.exe')
 editions=read_editions_csv('the_Dinner_editions_goodreads.csv')
-
-
-edition_languages=[ 'English', 'Dutch', 'Spanish', 'French, German' ]
+edition_languages=[ 'English', 'Dutch', 'Spanish', 'French', 'German' ]
 editions_req_languages=[]
 
 for edition in editions:
@@ -226,49 +286,14 @@ edition_language=editions_req_languages[edition_from_list][5]
 edition_split=edition_url.split( '/')
 edition=edition_split[5]
 title=title.replace(" ", "_")
-
 filename=title + "_" + edition # naming the csv file
 
-#print(title, edition, filename)
 
 
+# do functions:
+edition_scrape(edition_url, edition, edition_language)
 
-languages=['az','id','ca','da','de','et', 'en', 'es', 'fr', 'it','lv','lt', 'hu', 'nl', 'no', 'pl', 'pt', 'ru', 'ro', 'sk','sl','fi', \
-    'sv', 'vi', 'tr', 'hr', 'is','cs', 'el', 'bg', 'mk', 'uk','he', 'ar', 'fa', 'th', 'ka']
+#language_scrape(edition_url, edition, edition_language)
 
-more_position=''
+# stars_scrape( edition_url, edition, edition_language)
 
-# looping and scraping the languages
-driver = webdriver.Firefox(executable_path=r'geckodriver\geckodriver.exe')
-driver.get(edition_url)
-
-for review_language in languages:
-    print('####################################')
-    print('language = ' + review_language)
-
-    scrape_loop(driver, review_language, more_position, edition, edition_language)
-
-
-driver.close()
-
-
-
-
-# scraping reviews based on rating
-# for more_position in range(1, 6):
-#     #needs fresh driver for new round
-#     print('#####################################################')
-#     print(more_position)
-    
-#     driver = webdriver.Firefox(executable_path=r'geckodriver\geckodriver.exe')
-#     driver.get(edition_url)
-
-#     #more_position=5 # 1=5 stars, 2 =4 stars, 3=3 stars, 4 =2 stars, 5 =1 star
-#     review_language='' # must be empty, select on rating works only with all langugaes
-
-#     scrape_loop(driver,review_language, more_position)
-#     driver.close()
-
-
-
-#scrape_loop(driver,review_language, more_position)
