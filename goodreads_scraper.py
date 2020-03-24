@@ -9,6 +9,7 @@ from datetime import datetime
 import csv
 import os.path
 from os import path
+from config import *
 
 ###########################################################################################################
 # This script scrapes all the languages in the Goodreads selectbox, and will scrape the 5 - 1 star ratings. Also it will scrape 'this edition'.
@@ -33,10 +34,13 @@ from os import path
 
 
 def read_editions_csv(filename):
-     with open(filename , newline='', encoding='utf-8') as f:
-        reader = csv.reader(f)
-        data = list(reader)
-        return data
+    try:
+        with open(filename , newline='', encoding='utf-8') as f:
+            reader = csv.reader(f)
+            data = list(reader)
+            return data
+    except IOError:
+        return []
 
 
 
@@ -51,6 +55,7 @@ def make_xml_file(filename, title, review_date, review_language, review_id, auth
         #     print("Directory " , scraped_folder ,  " Created ") 
         # except FileExistsError:
         #     print("Directory " , scraped_folder,  " already exists")
+    text=text.replace("&", "&amp;")
 
     xml="<scrape>"
     xml+="<title>" + title +"</title>"
@@ -274,34 +279,36 @@ def stars_scrape(edition_url, edition, edition_language):
 
 
 #choose edition to scrape
-title='The Dinner' #for in the csv and XML files
+title=TITLE #from config, for in the csv and XML files
 
 # change this to get a new edition from the list with editions
-edition_from_list=13
+edition_from_list=24 #Todo, as script extension
 
-editions=read_editions_csv('the_Dinner_editions_goodreads.csv')
+editions=read_editions_csv( EDITIONS_CSV ) # from config.py
 edition_languages=['English', 'Dutch', 'Spanish', 'French', 'German']
 editions_req_languages=[]
 
 for edition in editions:
     if edition[5] in edition_languages:
         #print(edition)
-        editions_req_languages.append(edition)
-
-
-edition_url=editions_req_languages[edition_from_list][0] # this will be retrieve from the list of scraped editions itterating through the csv
-edition_language=editions_req_languages[edition_from_list][5]
-edition_split=edition_url.split( '/')
-edition=edition_split[5]
-title=title.replace(" ", "_")
-filename=title + "_" + edition # naming the csv file
+        editions_req_languages.append(edition) # TODO loop this one to scrape everything at once
 
 
 
-# do functions:
-edition_scrape(edition_url, edition, edition_language) # This one results in fresh reviews every time
 
-# language_scrape(edition_url, edition, edition_language) # this is fairly independent of edition, as it overlaps all editions. Run only one time seems sufficient
+if __name__ == "__main__":
 
-# stars_scrape( edition_url, edition, edition_language) # about the same, most of the ratings are taken from outher editions, although 'this edition' was selected.
+    edition_url=editions_req_languages[edition_from_list][0] # this will be retrieved from the list of scraped editions itterating through the csv 
+    edition_language=editions_req_languages[edition_from_list][5] 
+    edition_split=edition_url.split( '/')
+    edition=edition_split[5]
+    title=title.replace(" ", "_")
+    filename=title + "_" + edition # naming the csv file
+
+    # do functions:
+    edition_scrape(edition_url, edition, edition_language) # This one results in fresh reviews every time
+
+    # language_scrape(edition_url, edition, edition_language) # this is fairly independent of edition, as it overlaps all editions. Run only one time seems sufficient
+
+    # stars_scrape( edition_url, edition, edition_language) # about the same, most of the ratings are taken from outher editions, although 'this edition' was selected.
 
