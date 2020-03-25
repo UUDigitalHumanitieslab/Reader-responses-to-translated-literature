@@ -10,8 +10,8 @@ import csv
 from config import *
 
 #########################################
-# Scrapes the list of editions of a title, and stores the urls and other important information per edition.
-# To create a new CSV, in 'config.py' change the variable 'title' and the url on ALL_EDITIONS_URL, and specify the number of editions (to be found at the top of the page) and run the script
+# Scrapes the list of editions of a title, and stores the urls and other important information per edition in a CSV.
+# To create a new CSV, in 'config.py' change the variable 'title' and the url on ALL_EDITIONS_URL, and run script.
 ########################################
 
 
@@ -24,7 +24,7 @@ def read_csv_file(scraped_title):
 
 def make_csv_file(title, published, edition_information, author, ISBN, edition_language, average_rating):
     print(title + "," + published + "," + edition_information )
-    print(author + "," + ISBN + "," + edition_language + "," + average_rating)
+    #print(author + "," + ISBN + "," + edition_language + "," + average_rating)
     
     with open(scraped_title + '_editions_goodreads.csv', 'a', newline='', encoding='utf-8') as csvfile:
         fieldnames = ['title', 'published', 'edition_information', 'author', 'ISBN', 'edition_language', 'average_rating']
@@ -59,6 +59,7 @@ def scrape_page(driver):
     average_rating=''
 
     contents=driver.find_elements_by_class_name("editionData")
+
     for content in contents:
         dataRows=content.find_elements_by_class_name("dataRow")
         title=content.find_element_by_xpath(".//a").get_attribute("href") # get the link, not the title itself
@@ -84,28 +85,32 @@ def scrape_page(driver):
             counter+=1
             
         make_csv_file(title, published, edition_information, author, ISBN, edition_language, average_rating)
+    return len(contents) # how many editions were found on page
 
 
 
 def scrape_loop():
     # a new screen is triggered and closed every loop, to avoid the @#$ overlay that invites to log in, and that obscures the buttons
-    for page in range(1, number_pages+1):
+    results_number=30 #number of results of a full page
+    page=1
+    while results_number > 29:
         url_page=url+'?page='+ str(page)
         driver = webdriver.Firefox(executable_path=r'geckodriver\geckodriver.exe')
         driver.get(url_page)
         time.sleep(2)
-        scrape_page(driver)
-        if page < number_pages:
+        results_number=scrape_page(driver)
+        page+=1
+        if results_number > 29:
             print( 'Please wait for another page to appear...')
+        else:
+            print ('Done with scraping.')
         driver.close()
 
 
 scraped_title=TITLE # config.py
 url= ALL_EDITIONS_URL # config.py
-number_editions=NUMBER_OF_EDITIONS
-number_pages= int(round( (number_editions / 30) + 0.4999, 0))
 
 if __name__ == "__main__":
-    print('Number of pages to be scraped : ', number_pages)
+    #print('Number of pages to be scraped : ', number_pages)
     scrape_loop()
     	

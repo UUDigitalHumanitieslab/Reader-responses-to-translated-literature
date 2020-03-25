@@ -189,7 +189,7 @@ def scrape_page(driver, review_language, filename, title, edition, edition_langu
         
 
 
-def scrape_loop(driver, review_language, more_position, edition, edition_language, scrape_type):
+def scrape_loop(driver, review_language, filename, more_position, edition, edition_language, scrape_type):
 
     time.sleep(2)
     ddelement= Select(driver.find_element_by_id('language_code'))
@@ -197,11 +197,10 @@ def scrape_loop(driver, review_language, more_position, edition, edition_languag
 
 
     if more_position != '': 
-        time.sleep(2)
-
+        time.sleep(3)
         filters = driver.find_element_by_css_selector("a[id^='span_class_gr-hyperlink_more_filters_']")
         hover = ActionChains(driver).move_to_element(filters)
-        hover.perform()
+        hover.perform() # this is a weak spot: the hovering not always works, what is the problem? 
         time.sleep(2)
         tooltip=driver.find_element_by_class_name("tooltip")
         stars_links=tooltip.find_elements_by_class_name("loadingLink")
@@ -233,15 +232,15 @@ def scrape_loop(driver, review_language, more_position, edition, edition_languag
 
 
 
-#funtions for scraping on edition, language and star-ratings
+#functions for scraping on edition, language and star-ratings
 
-def edition_scrape(edition_url, edition, edition_language):
+def edition_scrape(filename, edition_url, edition, edition_language):
     scrape_type='edition'
     more_position=7 # integer, is position of the 'this edition' selection
     review_language='' # empty for all, must be all to get selection pane with the 'edition' option
     driver = webdriver.Firefox(executable_path=r'geckodriver\geckodriver.exe')
     driver.get(edition_url)
-    scrape_loop(driver,review_language, more_position, edition, edition_language, scrape_type)
+    scrape_loop(driver, review_language, filename, more_position, edition, edition_language, scrape_type)
     driver.close()
 
 
@@ -306,7 +305,7 @@ if __name__ == "__main__":
     filename=title + "_" + edition # naming the csv file
 
     # do functions:
-    edition_scrape(edition_url, edition, edition_language) # This one results in fresh reviews every time
+    edition_scrape(filename, edition_url, edition, edition_language) # This one results in fresh reviews every time
 
     # language_scrape(edition_url, edition, edition_language) # this is fairly independent of edition, as it overlaps all editions. Run only one time seems sufficient
 

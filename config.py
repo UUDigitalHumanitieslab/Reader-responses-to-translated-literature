@@ -9,8 +9,9 @@ TITLE ='The_Dinner'
 
 # for editions list scape
 ALL_EDITIONS_URL = 'https://www.goodreads.com/work/editions/6463092-het-diner'
-NUMBER_OF_EDITIONS = 137  # fill this out as an int, as it is not yet scraped and needed for the number of pages to be scraped
 
 # individual edition scrape
-
 EDITIONS_CSV = 'the_Dinner_editions_goodreads.csv' 
+
+#specify editions fõr which languages need to be scraped, in the format of goodreads in editions_csv
+EDITION_LANGUAGES=['English', 'Dutch', 'Spanish', 'French', 'German'] 
