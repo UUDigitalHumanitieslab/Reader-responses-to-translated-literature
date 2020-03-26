@@ -1,17 +1,16 @@
 '''
 Configuration.
 '''
-
-TITLE ='The_Dinner'
+TITLE ='The_philosophers_stone'
 
 # 'https://www.goodreads.com/work/editions/4640799-harry-potter-and-the-philosopher-s-stone'
 # 'https://www.goodreads.com/work/editions/6463092-het-diner'
 
-# for editions list scape
-ALL_EDITIONS_URL = 'https://www.goodreads.com/work/editions/6463092-het-diner'
+# for editions list scape, the editions URL of Goodreads
+ALL_EDITIONS_URL = 'https://www.goodreads.com/work/editions/4640799-harry-potter-and-the-philosopher-s-stone'
 
-# individual edition scrape
-EDITIONS_CSV = 'the_Dinner_editions_goodreads.csv' 
+# editions csv title that will be created to store the list of all editions, to be scraped from this list
+EDITIONS_CSV = 'Harry_Potter_phil_stone_editions_goodreads.csv' 
 
-#specify editions fõr which languages need to be scraped, in the format of goodreads in editions_csv
+#specify the languages of the editions that must be scraped, in the format of goodreads in the created editions_csv
 EDITION_LANGUAGES=['English', 'Dutch', 'Spanish', 'French', 'German'] 

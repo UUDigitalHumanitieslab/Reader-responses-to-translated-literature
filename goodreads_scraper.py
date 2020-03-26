@@ -98,12 +98,12 @@ def make_csv_file(title, review_date, review_language, review_id, author, rating
     
     #csv for checking if review already was scraped 
     with open('check_all_scrapes/all_scrapes_goodreads.csv', 'a', newline='', encoding='utf-8') as f:
-        fieldnames = ['review_id', 'title']
+        fieldnames = ['review_id', 'title', 'filename', 'scrape_type']
         writer2 = csv.DictWriter(f, fieldnames=fieldnames)
-        writer2.writerow({'review_id': review_id,'title':title})
+        writer2.writerow({'review_id': review_id,'title':title, 'filename': filename, 'scrape_type': scrape_type})
         
         
-
+  
 def read_csv_file():
     with open('check_all_scrapes/all_scrapes_goodreads.csv', newline='', encoding='utf-8') as f:
         reader = csv.reader(f)
@@ -173,7 +173,7 @@ def scrape_page(driver, review_language, filename, title, edition, edition_langu
         review_exists=False
 
         for existing_review in existing_reviews:
-            if review_id == existing_review[0]:
+            if review_id == existing_review[0] and scrape_type == existing_review[3] :
                 review_exists=True
                 print('Review already in csv, id = ' + review_id)
                 break
@@ -244,7 +244,7 @@ def edition_scrape(filename, edition_url, edition, edition_language):
     driver.close()
 
 
-def language_scrape(edition_url, edition, edition_language):
+def language_scrape(filename, edition_url, edition, edition_language):
     scrape_type='language'
     languages=['az','id','ca','da','de','et', 'en', 'es', 'fr', 'it','lv','lt', 'hu', 'nl', 'no', 'pl', 'pt', 'ru', 'ro', 'sk','sl','fi', \
     'sv', 'vi', 'tr', 'hr', 'is','cs', 'el', 'bg', 'mk', 'uk','he', 'ar', 'fa', 'th', 'ka']
@@ -254,26 +254,25 @@ def language_scrape(edition_url, edition, edition_language):
     for review_language in languages:
         print('####################################')
         print('language = ' + review_language)
-        scrape_loop(driver, review_language, more_position, edition, edition_language, scrape_type)
+        scrape_loop(driver, review_language, filename, more_position, edition, edition_language, scrape_type)
     driver.close()
 
 
-def stars_scrape(edition_url, edition, edition_language):
+def stars_scrape(filename, edition_url, edition, edition_language):
     scrape_type= 'stars'
 
     # more_position: 1 =5 stars, 2 =4 stars, 3=3 stars, 4 =2 stars, 5 =1 star
-    # a lot of errors here: element not found, caused by slow internet connection? Seems random problem
+    # a lot of errors here: element not found, caused by slow internet connection? Seems random problem, seems every 3 time elements are not found.
     for more_position in range(1, 6):
         #needs fresh driver for new round. 
         print('#####################################################')
-        print(more_position)
+        stars_number = 6 - more_position
+        print('Number of stars: ', stars_number)
         driver = webdriver.Firefox(executable_path=r'geckodriver\geckodriver.exe')
         driver.get(edition_url)
         review_language='' # must be empty, select on rating works only with all langugaes
-        scrape_loop(driver, review_language, more_position, edition, edition_language, scrape_type)
+        scrape_loop(driver, review_language, filename, more_position, edition, edition_language, scrape_type)
         driver.close() # for each round a new driver is started, to secure the starsrating-pane is available
-
-
 
 
 
@@ -293,8 +292,6 @@ for edition in editions:
         editions_req_languages.append(edition) # TODO loop this one to scrape everything at once
 
 
-
-
 if __name__ == "__main__":
 
     edition_url=editions_req_languages[edition_from_list][0] # this will be retrieved from the list of scraped editions itterating through the csv 
@@ -307,7 +304,7 @@ if __name__ == "__main__":
     # do functions:
     edition_scrape(filename, edition_url, edition, edition_language) # This one results in fresh reviews every time
 
-    # language_scrape(edition_url, edition, edition_language) # this is fairly independent of edition, as it overlaps all editions. Run only one time seems sufficient
+    # language_scrape(filename, edition_url, edition, edition_language) # this is fairly independent of edition, as it overlaps all editions. Run only one time seems sufficient
 
-    # stars_scrape( edition_url, edition, edition_language) # about the same, most of the ratings are taken from outher editions, although 'this edition' was selected.
+    # stars_scrape( filename, edition_url, edition, edition_language) # about the same, most of the ratings are taken from outher editions, although 'this edition' was selected.
 

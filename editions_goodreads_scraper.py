@@ -30,10 +30,9 @@ def make_csv_file(title, published, edition_information, author, ISBN, edition_l
         fieldnames = ['title', 'published', 'edition_information', 'author', 'ISBN', 'edition_language', 'average_rating']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         
-        #read the csv wit editions that are already scraped
+        #read the csv with editions that are already scraped
         existing_editions=read_csv_file(scraped_title)
      
-
         title_exists = False
 
         for existing_edition in existing_editions:
