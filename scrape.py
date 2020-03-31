@@ -1,5 +1,5 @@
-import goodreads_scraper
-import editions_goodreads_scraper
+from scripts import goodreads_scraper
+from scripts import editions_goodreads_scraper
 import sys
 from config import *
 

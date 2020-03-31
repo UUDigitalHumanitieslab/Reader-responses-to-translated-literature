@@ -13,25 +13,12 @@ from config import *
 
 ###########################################################################################################
 # This script scrapes all the languages in the Goodreads selectbox, and will scrape the 5 - 1 star ratings. Also it will scrape 'this edition'.
-# The star ratings are scraped for 'this edition'. But this seems not to work really well, as a lot of ratings are showing the text 'review of another edition'
+# The star ratings are scraped for 'this edition'. But this seems not to work really well, as a lot of ratings are showing the text: 'review of another edition'
 # so the only reviews that are certain applicable for this edition are the ones marked with scrape_type: 'edition'
-# Data are stored in a csv file. Data are appended if the review id is not yet in the general csv of scraped reviews.
+# Data are stored in a csv file. Data are appended if the review id is not yet in the general csv of scraped reviews, to prevent double reviews.
 # for each review an xml file is made and stored in the folder for the edition.
-# for every edition a new csv file is created, as it can hold thousands of reviews. A general CSV stores al the review id's 
-# and is used to check if a review already was stored, to prevent double reviews. 
+# for every edition a new csv file is created, as it can hold hundreds of reviews.
 ###########################################################################################################
-
-# For each review, store at least the following (not a complete list):
-#     edition title
-#     edition language
-#     review text
-#     review language
-#     review author
-#     review author sex (gender) HOW? not implemented yet
-#     review rating
-
-# as many other metadata as you can extract from GoodReads?
-
 
 def read_editions_csv(filename):
     try:
@@ -40,8 +27,11 @@ def read_editions_csv(filename):
             data = list(reader)
             return data
     except IOError:
+        print( '##############')
+        print("No editions CSV found. Please create first an editions list with 'makelist' argument.")
+        print("Do not forget to enter in the config the URL to scrape for the editions in Goodreads of the targeted work.")
+        print('##############')
         return []
-
 
 
 def make_xml_file(filename, title, review_date, review_language, review_id, author, rating, text, edition, edition_language, scrape_type):
@@ -50,11 +40,6 @@ def make_xml_file(filename, title, review_date, review_language, review_id, auth
     if not path.exists(scraped_folder): 
         os.mkdir(scraped_folder)
         
-        # try:
-        #     os.mkdir(scraped_folder)
-        #     print("Directory " , scraped_folder ,  " Created ") 
-        # except FileExistsError:
-        #     print("Directory " , scraped_folder,  " already exists")
     text=text.replace("&", "&amp;")
 
     xml="<scrape>"
@@ -96,7 +81,7 @@ def make_csv_file(title, review_date, review_language, review_id, author, rating
         writer.writerow({'review_id': review_id,'title':title, 'review_date':review_date, \
         'review_language': review_language, 'edition_language':edition_language, 'scrape_type':scrape_type, 'author': author, 'rating':rating, 'text':text})
     
-    #csv for checking if review already was scraped 
+    #general csv for checking if a review already was scraped 
     with open('check_all_scrapes/all_scrapes_goodreads.csv', 'a', newline='', encoding='utf-8') as f:
         fieldnames = ['review_id', 'title', 'filename', 'scrape_type']
         writer2 = csv.DictWriter(f, fieldnames=fieldnames)
@@ -134,7 +119,6 @@ def scrape_page(driver, review_language, filename, title, edition, edition_langu
         review_id=review.find_element_by_class_name('review').get_attribute("id")
         split= review_id.split("_")
         review_id=split[1]
-
         review_date=review.find_element_by_class_name('reviewDate').text
         review_date=review_date.strip(",")
         
@@ -197,21 +181,48 @@ def scrape_loop(driver, review_language, filename, more_position, edition, editi
 
 
     if more_position != '': 
-        time.sleep(3)
+        time.sleep(2)
         filters = driver.find_element_by_css_selector("a[id^='span_class_gr-hyperlink_more_filters_']")
         hover = ActionChains(driver).move_to_element(filters)
-        hover.perform() # this is a weak spot: the hovering not always works, what is the problem? 
-        time.sleep(2)
-        tooltip=driver.find_element_by_class_name("tooltip")
-        stars_links=tooltip.find_elements_by_class_name("loadingLink")
+        hover.perform() # tried to do it without, by changing display none to block with javascript, but it seems the elements only appear AFTER a hover.
+        time.sleep(3)
+
+        # class prototip has style = 'display: none', must be made visible:
+        # prototip=driver.find_elements_by_class_name("prototip")
+
+        # # prototip= str("javascript:document.getElementsByClassName('prototip');")
+       
+        tooltip=driver.find_element_by_class_name("tooltip") # moet ws by xpath, dan kna hij verborgen element vinden?
+        
+        # prototip=driver.find_element_by_xpath("//div[@class='prototip']")
+      
+        # print('- -----------')
+        # print(prototip)
+        # print('--------------')
+
+        # driver.execute_script("arguments[0].setAttribute('style','display:block;');",prototip)
+
+        stars_links=tooltip.find_elements_by_class_name("loadingLink") # origineel
+
+        # stars_links=driver.find_elements_by_class_name("loadingLink")
+        # for star_link in star_links:
+        #     try:
+        #         this_edition=star_link.find_element_by_link_text('this edition')
+        #     except:
+        #         print('not found')
+        
+
+        #print(this_edition.text)
+
         time.sleep(2)
         print('must be 10, otherwise element not found: ', len(stars_links))
 
         # first click position 7; this edition,
         driver.execute_script("arguments[0].click();", stars_links[7]) # click with javascript, as the element ccould be hidden
+        # driver.execute_script("arguments[0].click();", this_edition) # click with javascript, as the element ccould be hidden
+        
         time.sleep(1)
-        # driver.execute_script("arguments[0].click();", stars_links[9]) # click text only. But this is not working, as it now shows reviews from other editions as well
-        # time.sleep(1)
+        
 
         if more_position < 7:
             # list more filter, on 0=all, 1= 5 stars, 2 = 4stars, 3 = 3 stars, 4 = 2 stars, 5 = 1 star, 6 = editions all, 7 = this edition, 8 = content any, 9 = text-only
@@ -275,20 +286,18 @@ def stars_scrape(filename, edition_url, edition, edition_language):
         driver.close() # for each round a new driver is started, to secure the starsrating-pane is available
 
 
-
+# these variables beneath are only needed for independent running of this script
 #choose edition to scrape
 title=TITLE #from config, for in the csv and XML files
 
 # change this to get a new edition from the list with editions
-edition_from_list=24 #Todo, as script extension
-
+edition_from_list=1
 editions=read_editions_csv( EDITIONS_CSV ) # from config.py
 edition_languages=['English', 'Dutch', 'Spanish', 'French', 'German']
 editions_req_languages=[]
 
 for edition in editions:
     if edition[5] in edition_languages:
-        #print(edition)
         editions_req_languages.append(edition) # TODO loop this one to scrape everything at once
 
 

@@ -18579,3 +18579,1982 @@ dispatch/<@chrome://marionette/content/listener.js:520:15
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1585652199319	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileoRxWyO"
+1585652199834	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585652200150	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585652200150	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585652200150	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585652200150	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585652202104	Marionette	INFO	Listening on port 63778
+1585652202466	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585652214878	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585652307616	Marionette	INFO	Stopped listening on port 63778
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585652312281	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofile0Dqo5H"
+1585652312635	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585652312938	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585652312938	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585652312938	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585652312938	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585652314946	Marionette	INFO	Listening on port 63867
+1585652314965	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585652327372	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585652418547	Marionette	INFO	Stopped listening on port 63867
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585652423130	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileniFbUh"
+1585652423505	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585652423856	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585652423856	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585652423857	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585652423857	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585652425778	Marionette	INFO	Listening on port 63954
+1585652426281	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585652438391	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585652533497	Marionette	INFO	Stopped listening on port 63954
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585652538219	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofilecuvaHK"
+1585652538594	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585652538897	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585652538897	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585652538897	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585652538897	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585652540980	Marionette	INFO	Listening on port 64045
+1585652541360	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585652550566	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585652629402	Marionette	INFO	Stopped listening on port 64045
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585652634033	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileTMja68"
+1585652634430	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585652634728	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585652634728	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585652634728	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585652634728	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585652636603	Marionette	INFO	Listening on port 64206
+1585652636701	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585652648745	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585652728152	Marionette	INFO	Stopped listening on port 64206
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585652732859	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofilemfs0Ye"
+1585652733218	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585652733529	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585652733529	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585652733530	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585652733530	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585652735825	Marionette	INFO	Listening on port 64299
+1585652736021	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585652748362	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585652829939	Marionette	INFO	Stopped listening on port 64299
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585652834692	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofiledgl7r9"
+1585652835084	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585652835398	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585652835398	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585652835398	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585652835399	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585652837427	Marionette	INFO	Listening on port 64389
+1585652837843	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585652849861	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585652941438	Marionette	INFO	Stopped listening on port 64389
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585652945992	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileKTRtNv"
+1585652946410	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585652946736	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585652946736	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585652946736	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585652946736	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585652948480	Marionette	INFO	Listening on port 64481
+1585652948640	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585652957818	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585653051513	Marionette	INFO	Stopped listening on port 64481
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585653056053	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileac8DY9"
+1585653056451	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585653056771	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585653056771	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585653056771	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585653056771	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585653058487	Marionette	INFO	Listening on port 64575
+1585653058698	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585653071032	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585653163118	Marionette	INFO	Stopped listening on port 64575
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585653167564	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileqbh0m0"
+1585653167927	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585653168276	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585653168276	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585653168276	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585653168276	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585653169967	Marionette	INFO	Listening on port 64681
+1585653170244	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585653183696	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585653197014	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585653204889	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585653212697	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585653220501	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585653228460	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585653236280	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585653244482	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585653252656	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585653260589	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585653268565	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585653268769	Marionette	INFO	Stopped listening on port 64681
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585653273151	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofile6RMs0a"
+1585653273530	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585653273830	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585653273830	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585653273830	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585653273830	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585653275486	Marionette	INFO	Listening on port 64771
+1585653275794	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585653289744	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585655526861	Marionette	INFO	Stopped listening on port 64771
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+on.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585654121209	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585654121209	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585654121209	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585654121209	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585654122927	Marionette	INFO	Listening on port 65005
+1585654123159	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585654132610	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585654224919	Marionette	INFO	Stopped listening on port 65005
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585654229564	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofilelpMLN6"
+1585654229943	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585654230270	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585654230270	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585654230270	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585654230270	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585654232053	Marionette	INFO	Listening on port 65101
+1585654232193	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585654244751	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585654337095	Marionette	INFO	Stopped listening on port 65101
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585654341709	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileoXsxPy"
+1585654342153	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585654342484	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585654342484	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585654342484	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585654342484	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585654344305	Marionette	INFO	Listening on port 65189
+1585654344351	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585654356611	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585654455375	Marionette	INFO	Stopped listening on port 65189
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585654459801	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofilehWIPWr"
+1585654460237	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585654460553	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585654460553	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585654460553	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585654460553	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585654462426	Marionette	INFO	Listening on port 65278
+1585654462462	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585654474583	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585654553841	Marionette	INFO	Stopped listening on port 65278
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1585654558382	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileJkSYpl"
+1585654558764	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585654559079	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585654559080	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585654559080	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585654559080	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585654561031	Marionette	INFO	Listening on port 65367
+1585654561057	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585654573645	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585655527877	Marionette	INFO	Stopped listening on port 65367
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+on.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585655140055	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585655140055	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585655140055	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585655140055	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585655142216	Marionette	INFO	Listening on port 65527
+1585655142523	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585655151243	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585655243903	Marionette	INFO	Stopped listening on port 65527
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585655248450	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofile5GxcN6"
+1585655248831	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585655249131	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585655249131	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585655249131	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585655249132	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585655250955	Marionette	INFO	Listening on port 49240
+1585655251105	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585655263761	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585655276984	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585655285297	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585655302006	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585655311216	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585655320435	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585655329971	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585655339606	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585655349282	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585655357998	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585655358202	Marionette	INFO	Stopped listening on port 49240
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585655362478	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofilevus2fv"
+1585655362853	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585655363224	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585655363224	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585655363224	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585655363224	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585655364827	Marionette	INFO	Listening on port 49329
+1585655365145	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585655377897	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585655467163	Marionette	INFO	Stopped listening on port 49329
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1585655471541	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileQ2ueXV"
+1585655471875	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585655472192	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585655472192	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585655472192	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585655472192	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585655473959	Marionette	INFO	Listening on port 49426
+1585655474164	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585655486627	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585655528729	Marionette	INFO	Stopped listening on port 49426
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+on.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585655504742	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585655504742	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585655504742	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585655504743	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585655506787	Marionette	INFO	Listening on port 49505
+1585655507185	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585655516472	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585655531087	Marionette	INFO	Stopped listening on port 49505
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585655540494	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileS70Pz5"
+1585655540849	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585655541149	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585655541149	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585655541149	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585655541149	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585655543026	Marionette	INFO	Listening on port 49587
+1585655543140	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585655552352	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585655645463	Marionette	INFO	Stopped listening on port 49587
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585655649920	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileuxqFte"
+1585655650295	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585655650598	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585655650598	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585655650598	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585655650598	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585655652211	Marionette	INFO	Listening on port 49687
+1585655652549	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585655665164	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585655767135	Marionette	INFO	Stopped listening on port 49687
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585655771453	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileoX2sC6"
+1585655771807	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585655772135	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585655772135	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585655772136	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585655772136	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585655773766	Marionette	INFO	Listening on port 49868
+1585655774090	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585655787263	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585655800874	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585655809267	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585655817691	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585655826456	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585655835453	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585655853951	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585655863515	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585655873251	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585655883193	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1585655883396	Marionette	INFO	Stopped listening on port 49868
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1585655887886	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofilekXGOap"
+1585655888259	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585655888563	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585655888563	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585655888563	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585655888563	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585655890297	Marionette	INFO	Listening on port 49978
+1585655890534	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585655903276	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585655981359	Marionette	INFO	Stopped listening on port 49978
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585655985895	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileE4xv5I"
+1585655986272	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585655986587	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585655986587	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585655986588	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585655986588	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585655988513	Marionette	INFO	Listening on port 50063
+1585655988539	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585655997700	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585660988776	Marionette	INFO	Stopped listening on port 50063
+ram Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileizbQ7M"
+1585658533946	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585658534276	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585658534276	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585658534276	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585658534276	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585658536326	Marionette	INFO	Listening on port 50550
+1585658536720	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585658545820	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585658572404	Marionette	INFO	Stopped listening on port 50550
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileqQ7qlT"
+1585658566172	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585658566476	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585658566476	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585658566476	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585658566476	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585658568345	Marionette	INFO	Listening on port 50637
+1585658568805	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585658578375	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585658670028	Marionette	INFO	Stopped listening on port 50637
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585658674338	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofile92QUzh"
+1585658674681	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585658674984	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585658674984	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585658674984	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585658674984	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585658676744	Marionette	INFO	Listening on port 50739
+1585658676973	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585658689484	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585658781102	Marionette	INFO	Stopped listening on port 50739
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585658785664	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileKnJ0aU"
+1585658786128	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585658786481	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585658786481	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585658786481	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585658786481	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585658788342	Marionette	INFO	Listening on port 50889
+1585658788835	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585658801545	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585658896699	Marionette	INFO	Stopped listening on port 50889
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1585658901277	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofilewfrkMR"
+1585658901950	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585658902584	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585658902584	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585658902584	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585658902584	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585658904674	Marionette	INFO	Listening on port 51165
+1585658904975	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585658914829	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585659000133	Marionette	INFO	Stopped listening on port 51165
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585659004989	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileYRByVd"
+1585659005410	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585659005777	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585659005777	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585659005777	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585659005777	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585659007818	Marionette	INFO	Listening on port 51256
+1585659008169	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585659021674	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585659097785	Marionette	INFO	Stopped listening on port 51256
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585659102311	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofilewR7ebV"
+1585659102789	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585659103105	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585659103105	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585659103105	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585659103105	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585659104738	Marionette	INFO	Listening on port 51391
+1585659104962	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585659117596	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585659195551	Marionette	INFO	Stopped listening on port 51391
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1585659200114	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileaPA0nQ"
+1585659200584	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585659200913	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585659200913	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585659200913	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585659200913	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585659202863	Marionette	INFO	Listening on port 51538
+1585659203255	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585659215829	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585659301095	Marionette	INFO	Stopped listening on port 51538
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585659305512	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileYKX1Qz"
+1585659305914	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585659306231	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585659306231	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585659306231	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585659306231	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585659308084	Marionette	INFO	Listening on port 51629
+1585659308170	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585659320566	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585659416835	Marionette	INFO	Stopped listening on port 51629
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585659421166	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofilecB66oQ"
+1585659421538	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585659421842	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585659421842	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585659421842	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585659421842	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585659423488	Marionette	INFO	Listening on port 51729
+1585659423863	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585659436050	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585659510077	Marionette	INFO	Stopped listening on port 51729
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585659514481	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofilevUWPE9"
+1585659514858	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585659515207	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585659515207	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585659515207	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585659515207	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585659516872	Marionette	INFO	Listening on port 51859
+1585659517143	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585659529775	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585663495841	Marionette	INFO	Stopped listening on port 51859
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofile3Y4IzU"
+1585659944210	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585659944513	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585659944513	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585659944513	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585659944513	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585659946414	Marionette	INFO	Listening on port 52002
+1585659946475	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585663525631	Marionette	INFO	Stopped listening on port 52002
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileY6QUr2"
+1585660497645	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585660497965	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585660497965	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585660497965	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585660497965	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585660499810	Marionette	INFO	Listening on port 52321
+1585660500301	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585663524017	Marionette	INFO	Stopped listening on port 52321
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofile1gHWns"
+1585660560141	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585660560455	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585660560456	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585660560456	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585660560456	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585660562640	Marionette	INFO	Listening on port 52411
+1585660562993	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585663511527	Marionette	INFO	Stopped listening on port 52411
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileO7dc2S"
+1585660913317	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585660913629	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585660913629	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585660913629	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585660913629	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585660915391	Marionette	INFO	Listening on port 52711
+1585660915476	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585663504645	Marionette	INFO	Stopped listening on port 52711
+ram Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileM3fNaR"
+1585661063200	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585661063556	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585661063556	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585661063557	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585661063557	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585661065669	Marionette	INFO	Listening on port 52833
+1585661066004	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585663504771	Marionette	INFO	Stopped listening on port 52833
+ram Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileRVWW9r"
+1585661129801	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585661130129	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585661130129	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585661130129	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585661130129	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585661131867	Marionette	INFO	Listening on port 52931
+1585661131947	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585663510322	Marionette	INFO	Stopped listening on port 52931
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofile5iFUVz"
+1585661169810	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585661170189	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585661170190	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585661170190	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585661170190	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585661172110	Marionette	INFO	Listening on port 53024
+1585661172542	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585663508044	Marionette	INFO	Stopped listening on port 53024
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofile1RuW6m"
+1585661263446	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585661263763	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585661263763	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585661263763	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585661263763	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585661265741	Marionette	INFO	Listening on port 53121
+1585661266049	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585663509144	Marionette	INFO	Stopped listening on port 53121
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileSdp6lA"
+1585661889284	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585661889646	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585661889646	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585661889646	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585661889646	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585661891769	Marionette	INFO	Listening on port 53433
+1585661891869	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585663512814	Marionette	INFO	Stopped listening on port 53433
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofilePM73EQ"
+1585662113027	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585662113366	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585662113366	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585662113366	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585662113366	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585662115169	Marionette	INFO	Listening on port 53614
+1585662115617	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x1A0011,name=PBackgroundStorage::Msg_Observe) Channel error: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1585663515923	Marionette	INFO	Stopped listening on port 53614
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585662199508	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585662199508	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585662199508	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585662201340	Marionette	INFO	Listening on port 53713
+1585662201487	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585663518620	Marionette	INFO	Stopped listening on port 53713
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileUtCr2g"
+1585662345218	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585662345607	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585662345607	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585662345607	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585662345607	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585662347675	Marionette	INFO	Listening on port 53844
+1585662347825	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585663520014	Marionette	INFO	Stopped listening on port 53844
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+on.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585662373461	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585662373461	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585662373461	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585662373461	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585662375326	Marionette	INFO	Listening on port 53918
+1585662375378	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585662383808	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1585663500374	Marionette	INFO	Stopped listening on port 53918
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 8728, Gecko_IOThread] WARNING: pipe error: 232: file z:/task_1583751780/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 507
+extension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585662415494	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585662415494	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585662415494	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585662417360	Marionette	INFO	Listening on port 54007
+1585662417821	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585662426670	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585663498069	Marionette	INFO	Stopped listening on port 54007
+ram Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofiled2T3t0"
+1585662442677	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585662442999	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585662442999	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585662442999	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585662442999	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585662445019	Marionette	INFO	Listening on port 54086
+1585662445367	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585662454647	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585663497460	Marionette	INFO	Stopped listening on port 54086
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+on.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585662546820	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585662546820	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585662546820	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585662546820	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585662549107	Marionette	INFO	Listening on port 54180
+1585662549535	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585662558789	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585662652475	Marionette	INFO	Stopped listening on port 54180
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Parent 18532, Gecko_IOThread] WARNING: file z:/task_1583751780/build/src/ipc/chromium/src/base/process_util_win.cc, line 160
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585662657241	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileuoknot"
+1585662657802	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585662658175	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585662658175	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585662658175	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585662658175	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585662660205	Marionette	INFO	Listening on port 54281
+1585662660411	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585662672201	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585662769057	Marionette	INFO	Stopped listening on port 54281
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585662773437	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofilesQbtVd"
+1585662773840	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585662774168	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585662774168	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585662774168	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585662774168	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585662776112	Marionette	INFO	Listening on port 54380
+1585662776609	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.gr-assets.com/assets/desktop/libraries-c3b90bb3e1f8d740915ab22f13b11359.js line 157 > eval, line 1: TypeError: this.options is undefined
+1585662788349	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2243))
+1585663496960	Marionette	INFO	Stopped listening on port 54380
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+on.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585662897233	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585662897234	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585662897234	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585662897234	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585662899159	Marionette	INFO	Listening on port 54476
+1585662899648	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585662907616	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585663520576	Marionette	INFO	Stopped listening on port 54476
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 28908, Gecko_IOThread] WARNING: pipe error: 232: file z:/task_1583751780/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 507
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+5	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585663207265	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585663207265	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585663207266	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585663209151	Marionette	INFO	Listening on port 54746
+1585663209545	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585663218726	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585663521530	Marionette	INFO	Stopped listening on port 54746
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+rs\\Robert\\AppData\\Local\\Temp\\rust_mozprofileQl7Kp7"
+1585663327740	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585663328118	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585663328118	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585663328118	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585663328118	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585663331039	Marionette	INFO	Listening on port 54837
+1585663331383	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585663343903	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585663522218	Marionette	INFO	Stopped listening on port 54837
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585663533997	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileTTMxHU"
+1585663534507	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585663534818	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585663534818	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585663534818	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585663534818	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585663536574	Marionette	INFO	Listening on port 54976
+1585663536679	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585663544702	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2243))
+1585665593779	Marionette	INFO	Stopped listening on port 54976
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585663591399	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585663591399	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585663591399	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585663591399	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585663593112	Marionette	INFO	Listening on port 55055
+1585663593400	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585663602045	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585665598921	Marionette	INFO	Stopped listening on port 55055
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+on.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585664168669	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585664168669	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585664168669	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585664168669	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585664170408	Marionette	INFO	Listening on port 55268
+1585664170661	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585664178957	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585665598473	Marionette	INFO	Stopped listening on port 55268
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+on.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585664273214	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585664273214	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585664273214	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585664273214	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585664274912	Marionette	INFO	Listening on port 55360
+1585664275190	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585664284477	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585665597813	Marionette	INFO	Stopped listening on port 55360
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+on.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585664479517	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585664479517	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585664479518	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585664479518	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585664481218	Marionette	INFO	Listening on port 55460
+1585664481491	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585664489620	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585665597233	Marionette	INFO	Stopped listening on port 55460
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofileNx9grB"
+1585664511851	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585664512170	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585664512170	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585664512170	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585664512170	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585664513974	Marionette	INFO	Listening on port 55538
+1585664514157	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585664522153	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585665596530	Marionette	INFO	Stopped listening on port 55538
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+on.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585664610804	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585664610805	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585664610805	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585664610805	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585664612572	Marionette	INFO	Listening on port 55635
+1585664612756	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585664620370	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585664634947	Marionette	INFO	Stopped listening on port 55635
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585664639242	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofilewhFrL2"
+1585664639757	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585664640131	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585664640131	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585664640132	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585664640132	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585664642023	Marionette	INFO	Listening on port 55711
+1585664642407	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585664650455	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585664664677	Marionette	INFO	Stopped listening on port 55711
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585664668978	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofilerSEXUp"
+1585664669354	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585664669664	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585664669664	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585664669664	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585664669664	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585664671490	Marionette	INFO	Listening on port 55789
+1585664671609	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585664679570	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585664693739	Marionette	INFO	Stopped listening on port 55789
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585664698056	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofilewad1La"
+1585664698441	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585664698788	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585664698788	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585664698788	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585664698788	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585664700667	Marionette	INFO	Listening on port 55866
+1585664700703	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585664713287	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585665595135	Marionette	INFO	Stopped listening on port 55866
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+on.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585665079832	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585665079832	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585665079832	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585665079832	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585665081791	Marionette	INFO	Listening on port 55987
+1585665081814	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585665089841	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+[Child 29784, Chrome_ChildThread] WARNING: pipe error: 232: file z:/task_1583751780/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 507
+1585665591822	Marionette	INFO	Stopped listening on port 55987
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ddons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585665335938	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585665335938	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585665335938	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585665337925	Marionette	INFO	Listening on port 56090
+1585665338375	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://marionette/content/proxy.js, line 222: TypeError: this.browser.driver.dialogObserver is null
+JavaScript error: chrome://marionette/content/proxy.js, line 222: TypeError: this.browser.driver.dialogObserver is null
+1585665591298	Marionette	INFO	Stopped listening on port 56090
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+on: networkStatus
+1585665357972	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585665357972	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585665357972	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585665357973	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585665359682	Marionette	INFO	Listening on port 56172
+1585665359938	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585665368451	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+[Child 6872, Chrome_ChildThread] WARNING: pipe error: 232: file z:/task_1583751780/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 507
+1585665590782	Marionette	INFO	Stopped listening on port 56172
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585665430149	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585665430149	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585665430149	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585665432249	Marionette	INFO	Listening on port 56265
+1585665432502	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585665440730	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+1585665540231	Marionette	INFO	Stopped listening on port 56265
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1585665545080	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofilehxBEZ9"
+1585665545676	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585665546056	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585665546057	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585665546057	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585665546057	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585665549130	Marionette	INFO	Listening on port 56411
+1585665549272	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585665560318	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x580011,name=PHttpChannel::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1585665589843	Marionette	INFO	Stopped listening on port 56411
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1585669533188	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Robert\\AppData\\Local\\Temp\\rust_mozprofile3EZrYo"
+1585669533646	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585669533959	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585669533959	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585669533959	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585669533959	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1585669535644	Marionette	INFO	Listening on port 57052
+1585669535859	Marionette	WARN	TLS certificate errors will be ignored for this session
+1585669544369	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+Sleep@chrome://marionette/content/sync.js:282:10
+dispatchPause@chrome://marionette/content/action.js:1482:10
+toEvents/<@chrome://marionette/content/action.js:1156:16
+action.dispatchTickActions@chrome://marionette/content/action.js:1060:35
+action.dispatch/chainEvents<@chrome://marionette/content/action.js:1028:20
+action.dispatch@chrome://marionette/content/action.js:1034:5
+performActions@chrome://marionette/content/listener.js:850:16
+dispatch/</req<@chrome://marionette/content/listener.js:527:14
+dispatch/<@chrome://marionette/content/listener.js:520:15
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x580011,name=PHttpChannel::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1585669562005	Marionette	INFO	Stopped listening on port 57052
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
