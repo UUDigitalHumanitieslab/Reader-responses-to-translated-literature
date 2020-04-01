@@ -2,3 +2,5 @@
 geckodriver.log
 /check_all_scrapes
 /_pycache_
+/XML
+/CSV

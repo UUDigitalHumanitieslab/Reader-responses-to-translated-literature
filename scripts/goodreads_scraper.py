@@ -35,8 +35,11 @@ def read_editions_csv(filename):
 
 
 def make_xml_file(filename, title, review_date, review_language, review_id, author, rating, text, edition, edition_language, scrape_type):
-    scraped_folder='XML/' + filename
+    xml_folder= 'XML'
+    if not path.exists(xml_folder): 
+        os.mkdir(xml_folder)
 
+    scraped_folder='XML/' + filename
     if not path.exists(scraped_folder): 
         os.mkdir(scraped_folder)
         
@@ -66,8 +69,10 @@ def make_xml_file(filename, title, review_date, review_language, review_id, auth
 
 
 def make_csv_file(title, review_date, review_language, review_id, author, rating, text, filename, edition_language, scrape_type):
+    scraped_folder='CSV'
     
-    if not path.exists('CSV/' + filename + '_scrapes_goodreads.csv'):
+    if not path.exists(scraped_folder):
+        os.mkdir(scraped_folder)
         write_header=True
     else:
         write_header=False
@@ -82,6 +87,10 @@ def make_csv_file(title, review_date, review_language, review_id, author, rating
         'review_language': review_language, 'edition_language':edition_language, 'scrape_type':scrape_type, 'author': author, 'rating':rating, 'text':text})
     
     #general csv for checking if a review already was scraped 
+    check_folder= 'check_all_scrapes'
+    if not path.exists(check_folder): 
+        os.mkdir(check_folder)
+
     with open('check_all_scrapes/all_scrapes_goodreads.csv', 'a', newline='', encoding='utf-8') as f:
         fieldnames = ['review_id', 'title', 'filename', 'scrape_type']
         writer2 = csv.DictWriter(f, fieldnames=fieldnames)
@@ -187,42 +196,25 @@ def scrape_loop(driver, review_language, filename, more_position, edition, editi
         hover.perform() # tried to do it without, by changing display none to block with javascript, but it seems the elements only appear AFTER a hover.
         time.sleep(3)
 
+        # tried to make hidden elements display block, to access directly the element, but no luck so far. 
         # class prototip has style = 'display: none', must be made visible:
         # prototip=driver.find_elements_by_class_name("prototip")
-
-        # # prototip= str("javascript:document.getElementsByClassName('prototip');")
+        # prototip= str("javascript:document.getElementsByClassName('prototip');")
        
-        tooltip=driver.find_element_by_class_name("tooltip") # moet ws by xpath, dan kna hij verborgen element vinden?
+        tooltip=driver.find_element_by_class_name("tooltip") # moet ws by xpath, dan kan hij verborgen element vinden?
         
         # prototip=driver.find_element_by_xpath("//div[@class='prototip']")
-      
-        # print('- -----------')
-        # print(prototip)
-        # print('--------------')
+        # driver.execute_script("arguments[0].setAttribute('style','display:block;');",prototip) 
 
-        # driver.execute_script("arguments[0].setAttribute('style','display:block;');",prototip)
-
-        stars_links=tooltip.find_elements_by_class_name("loadingLink") # origineel
-
-        # stars_links=driver.find_elements_by_class_name("loadingLink")
-        # for star_link in star_links:
-        #     try:
-        #         this_edition=star_link.find_element_by_link_text('this edition')
-        #     except:
-        #         print('not found')
-        
-
-        #print(this_edition.text)
+        stars_links=tooltip.find_elements_by_class_name("loadingLink")
 
         time.sleep(2)
         print('must be 10, otherwise element not found: ', len(stars_links))
 
         # first click position 7; this edition,
         driver.execute_script("arguments[0].click();", stars_links[7]) # click with javascript, as the element ccould be hidden
-        # driver.execute_script("arguments[0].click();", this_edition) # click with javascript, as the element ccould be hidden
         
         time.sleep(1)
-        
 
         if more_position < 7:
             # list more filter, on 0=all, 1= 5 stars, 2 = 4stars, 3 = 3 stars, 4 = 2 stars, 5 = 1 star, 6 = editions all, 7 = this edition, 8 = content any, 9 = text-only
