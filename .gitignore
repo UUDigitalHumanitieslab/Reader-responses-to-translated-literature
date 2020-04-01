@@ -1,6 +1,4 @@
 
 geckodriver.log
-/CSV
-/XML
 /check_all_scrapes
-/geckodriver
+/_pycache_
