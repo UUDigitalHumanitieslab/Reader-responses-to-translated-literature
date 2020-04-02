@@ -1,6 +1,9 @@
 
-geckodriver.log
+*.log
+/.env
+/.vscode
+*.pyc
+/.pytest*
 /check_all_scrapes
-/_pycache_
 /XML
 /CSV
