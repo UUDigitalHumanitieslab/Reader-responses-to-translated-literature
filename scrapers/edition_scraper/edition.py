@@ -44,5 +44,14 @@ class Edition:
             self.number_of_ratings,
         ]
 
+    def get_id(self):
+        '''
+        If available, return just the goodreads identifier.
+        Example: '22561799-het-diner'.
+        '''
+        if not self.url: return None
+        index = self.url.rfind('/') + 1
+        return self.url[index:]
+
     def __str__(self):
         return str(self.title)

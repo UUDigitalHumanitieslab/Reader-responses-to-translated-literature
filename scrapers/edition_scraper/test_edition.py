@@ -45,3 +45,10 @@ def test_to_csv_row():
         3.47,
         114
     ]
+
+def test_get_id():
+    edition = Edition()
+    assert edition.get_id() == None
+    edition.url = 'https://goodreads.com/book/show/16073029-the-dinner'
+    assert edition.get_id() == '16073029-the-dinner'
+    
