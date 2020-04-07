@@ -106,7 +106,11 @@ class EditionPageParser():
         return authors
 
     def get_title_and_url(self, book_title):
-        return self.remove_whitespace(book_title.text), book_title['href']
+        '''
+        Get both title and url (i.e. two return values)
+        '''
+        url = "https://goodreads.com{}".format(book_title['href'])
+        return self.remove_whitespace(book_title.text), url
 
     def remove_whitespace(self, text):
         '''

@@ -21,7 +21,7 @@ def test_get_csv_header():
 def test_to_csv_row():
     edition = Edition()
     edition.title = 'The Dinner (Audio CD)'
-    edition.url = '/book/show/16073029-the-dinner'
+    edition.url = 'https://goodreads.com/book/show/16073029-the-dinner'
     edition.pub_details = 'Published February 12th 2013 by AudioGO'
     edition.edition_details = 'Audio CD, 8 pages'
     edition.authors = ['Herman Koch', 'Clive Mantle (Narrator)']
@@ -34,7 +34,7 @@ def test_to_csv_row():
     assert len(row) == 11
     assert row == [
         'The Dinner (Audio CD)',
-        '/book/show/16073029-the-dinner',
+        'https://goodreads.com/book/show/16073029-the-dinner',
         'Herman Koch,Clive Mantle (Narrator)',
         'Published February 12th 2013 by AudioGO',
         'Audio CD, 8 pages',

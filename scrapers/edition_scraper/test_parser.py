@@ -60,7 +60,7 @@ def test_get_edition():
     soup = BeautifulSoup(html, 'html.parser')
     edition = parser.get_edition(soup)
     assert edition.title == 'The Dinner (Audio CD)'
-    assert edition.url == '/book/show/16073029-the-dinner'
+    assert edition.url == 'https://goodreads.com/book/show/16073029-the-dinner'
     assert edition.pub_details == 'Published February 12th 2013 by AudioGO'
     assert edition.edition_details == 'Audio CD, 8 pages'
     assert edition.authors == ['Herman Koch', 'Clive Mantle (Narrator)']
