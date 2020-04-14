@@ -15,11 +15,13 @@ def scrape(editions, output_path, edition_languages=['English', 'Dutch', 'German
     exporter = Exporter()
     reviews = []
     used_editions = 0
+    editions_length = len(editions)
 
-    for e in editions:
-        if e.language in edition_languages:
+    for index, edition in enumerate(editions):
+        if edition.language in edition_languages:
+            log("Collecting reviews for edition '{}' [{}/{}]".format(edition.get_id(), index + 1, editions_length))
             used_editions += 1
-            reviews.extend(collect(e))
+            reviews.extend(collect(edition))
 
     log("{} reviews collected from {} editions".format(len(reviews), used_editions))
 

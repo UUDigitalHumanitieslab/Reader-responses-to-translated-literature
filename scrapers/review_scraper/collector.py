@@ -20,8 +20,6 @@ def collect(edition):
     if not edition:
         raise ValueError('edition cannot be None or empty')
 
-    log("Collecting reviews for edition '{}'".format(edition.get_id()))
-
     reviews = []
     first_page_parser = get_page_parser(base_url, edition, 1)
     number_of_reviews = first_page_parser.get_number_of_text_only_reviews()
