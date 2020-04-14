@@ -1,4 +1,4 @@
-from .collector import get_page_url, get_base_url, get_number_of_pages
+from .collector import get_page_url, get_base_url
 
 def test_get_page_url():
     url = 'https://www.goodreads.com/work/editions/6463092-het-diner'
@@ -13,10 +13,3 @@ def test_get_base_url():
     assert get_base_url(url_no_qp) == expected
     assert get_base_url(url_one_qp) == expected
     assert get_base_url(url_multiple_qp) == expected
-
-def test_get_number_of_pages():
-    assert get_number_of_pages(137) == 2
-    assert get_number_of_pages(6) == 1
-    assert get_number_of_pages(543) == 6
-    assert get_number_of_pages(100) == 1
-    assert get_number_of_pages(101) == 2

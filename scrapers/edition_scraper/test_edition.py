@@ -1,4 +1,4 @@
-from .edition import Edition
+from utilities.edition import Edition
 
 
 def test_get_csv_header():

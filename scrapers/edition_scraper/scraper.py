@@ -1,5 +1,6 @@
 from .collector import collect as collect_editions
 from .exporter import to_csv
+from utilities.utils import log
 
 def scrape(url, export_file):
     '''
@@ -13,8 +14,9 @@ def scrape(url, export_file):
     if export_file and not export_file.lower().endswith('.csv'):
         raise ValueError('export file must be a \'.csv\' file')
 
-    editions = collect_editions(url) 
-    
+    editions = collect_editions(url)
+    log("{} editions collected from '{}'".format(len(editions), url))
+
     if export_file:
         to_csv(export_file, editions)
 
