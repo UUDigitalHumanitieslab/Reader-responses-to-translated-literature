@@ -48,10 +48,10 @@ A review looks like this:
 | id | The GoodReads id for the review |
 | url | GoodReads url for the review |
 | edition_id | The GoodReads id for the edition the review belongs to
-| edition_language | Language of the edition the review belongs to |
+| edition_language | Language of the edition the review belongs to, as a full word (e.g. 'English') |
 | date | Date the review was published on GoodReads |
 | author | User that wrote the review |
-| language | The language the review is written in. (Note that this is detetced by the scraper, see below) |
+| language | The language the review is written in, as a language code (i.e. 'en'). (Note that this is detected by the scraper, see below) |
 | rating | The rating that comes with the review. Isn't typically, but can be empty. |
 | text | The full text of the review |
 
