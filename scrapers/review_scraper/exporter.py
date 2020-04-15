@@ -32,7 +32,13 @@ class Exporter:
                 self.csv_header_written = True
             for r in reviews:
                 if not self.unique or (self.unique and not self.already_exported(r)):
-                    writer.writerow(r.to_dict())
+                    try:
+                        writer.writerow(r.to_dict())
+                    except:
+                        log("Error encountered exporting review '{}'. Printing it below for reference.".format(r.id))
+                        log(vars(r.to_dict()))
+                        self.exported_ids.pop()
+
 
         log("{} {}reviews exported to '{}'".format(
             len(self.exported_ids), "(unique) " if self.unique else "", path))
