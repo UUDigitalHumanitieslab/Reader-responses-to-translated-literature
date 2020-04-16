@@ -88,7 +88,7 @@ class ReviewPageParser:
             review.edition_id = self.edition.get_id()
             review.author = self.get_text_or_none(review_html.find('a', class_='user'))
             review.date = self.get_text_or_none(review_html.find('a', class_='reviewDate'))
-            review.text = self.get_text_or_none(review_text.find('span', class_='readable'))
+            review.text = self.extract_review(review_text)
             review.rating = self.get_text_or_none(review_html.find('span', class_='staticStar'))
             if review.text:
                 try:
@@ -98,7 +98,12 @@ class ReviewPageParser:
                     # '3.5-4/5', or '(...) 6/10'
                     review.language = 'UNKNOWN'
             reviews.append(review)
-        return reviews
+        return reviews        
+
+    def extract_review(self, review_text_elem):
+        container = review_text_elem.find('span', class_='readable')
+        # always extract the text from the last <span>.
+        return self.get_text_or_none(container.find_all('span')[-1])
 
     def get_text_or_none(self, field):
         if field: return remove_whitespace(field.get_text(' '))
