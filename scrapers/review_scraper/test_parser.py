@@ -156,17 +156,6 @@ def test_get_reviews_field_content():
             # rating, surprisingly, can be None
 
 
-def test_has_alternate_ratings():
-    '''
-    Check if pages collected with rating query contain only the queried rating.
-    '''
-    for page in test_pages:
-        # ignore pages that weren't collected with a rating query
-        if 'rating' in page:
-            p = ReviewPageParser(get_test_page(page['file']), fake_edition)
-            assert p.has_alternate_ratings(page['rating']) == page['alternate_ratings']
-
-
 def test_contains_only_reviews():
     for page in test_pages:
         p = ReviewPageParser(get_test_page(page['file']), fake_edition)

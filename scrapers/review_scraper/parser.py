@@ -44,21 +44,6 @@ class ReviewPageParser:
         words = remove_whitespace(count_elem.text).strip().split(' ')
         return int(words[3])
 
-    def has_alternate_ratings(self, rating):
-        '''
-        Check if the current page has any ratings other than `rating`. Typically, this implies
-        that the current page has only ratings with the value of `rating` (no reviews with text), 
-        and these are supplemented with ratings and reviews of different scores.
-        '''
-        result = False
-        for review in self.reviews:
-            stars_count = len(review.find('div', class_='reviewHeader').find_all('span', class_='staticStar p10'))
-            if not stars_count == rating:
-                result = True
-                break
-        return result
-
-
     def get_count_element(self):
         '''
         Extract the element containg the 'Displaying X of Y reviews' text.

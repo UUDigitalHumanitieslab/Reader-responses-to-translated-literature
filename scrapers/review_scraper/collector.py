@@ -23,7 +23,8 @@ def collect(edition):
     reviews = []
     first_page_parser = get_page_parser(base_url, edition, 1)
     number_of_reviews = first_page_parser.get_number_of_text_only_reviews()
-
+    print(number_of_reviews)
+    
     if number_of_reviews == 300:
         log("More than 300 reviews found, collecting per rating.")
         reviews = collect_per_rating(base_url, edition)
@@ -55,15 +56,12 @@ def collect_non_top_300(first_page_parser, base_url, edition, rating=None):
     '''
     reviews = []
     number_of_reviews = first_page_parser.get_number_of_text_only_reviews()
+    reviews.extend(first_page_parser.get_reviews())
     if first_page_parser.contains_only_reviews():
-        reviews.extend(first_page_parser.get_reviews())
         number_of_pages = get_number_of_pages(number_of_reviews, 30)
         for page_number in range(2, number_of_pages + 1):
             parser = get_page_parser(base_url, edition, page_number, rating, True)
             reviews.extend(parser.get_reviews())
-    else:
-        if not first_page_parser.has_alternate_ratings(rating):
-            reviews.extend(first_page_parser.get_reviews())
     return reviews
 
 
@@ -84,7 +82,7 @@ def get_page_parser(base_url, edition, page_number, rating=None, text_only=False
     '''
     page_url = get_page_url(base_url, edition, page_number, rating, text_only)
     log_collection_details(edition, page_number, rating)
-    html = collect_html(page_url)    
+    html = collect_html(page_url)
     return ReviewPageParser(html, edition)
 
 
