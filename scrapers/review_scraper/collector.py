@@ -23,7 +23,6 @@ def collect(edition):
     reviews = []
     first_page_parser = get_page_parser(base_url, edition, 1)
     number_of_reviews = first_page_parser.get_number_of_text_only_reviews()
-    print(number_of_reviews)
     
     if number_of_reviews == 300:
         log("More than 300 reviews found, collecting per rating.")
