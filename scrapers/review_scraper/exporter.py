@@ -24,7 +24,7 @@ class Exporter:
         if not reviews or len(reviews) == 0:
             raise ValueError("'reviews' cannot be None or an empty list")
 
-        with open(path, 'a') as csv_file:
+        with open(path, 'a', encoding='utf-8', newline='\n') as csv_file:
             writer = csv.DictWriter(
                 csv_file, fieldnames=reviews[0].get_csv_header(), delimiter=CSV_DELIMITER)
             if not self.csv_header_written:
@@ -36,7 +36,7 @@ class Exporter:
                         writer.writerow(r.to_dict())
                     except:
                         log("Error encountered exporting review '{}'. Printing it below for reference.".format(r.id))
-                        log(vars(r.to_dict()))
+                        #log(vars(r.to_dict()))
                         self.exported_ids.pop()
 
 
