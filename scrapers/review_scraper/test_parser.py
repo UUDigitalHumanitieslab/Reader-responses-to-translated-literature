@@ -80,6 +80,13 @@ test_pages = [
         'alternate_ratings': False,
         'edition_text_only_review_count': 300 
     },
+    {
+        'file': '7947003-the-lost-symbol_8.html',
+        'review_count': 30,
+        'only_reviews': True,
+        'top_300': False,
+        'edition_text_only_review_count': 277
+    },
 ]
 
 
@@ -151,9 +158,11 @@ def test_get_reviews_field_content():
             assert r.url is not None
             assert r.date is not None
             assert r.author is not None
+            if r.language is None:
+                print(vars(r))
             assert r.language is not None
-            assert r.text is not None
             # rating, surprisingly, can be None
+            # text, even more surprisingly, can be None in rare cases, see #15
 
 
 def test_contains_only_reviews():
@@ -172,6 +181,7 @@ def test_get_number_of_text_only_reviews():
     for page in test_pages:
         p = ReviewPageParser(get_test_page(page['file']), fake_edition)
         assert p.get_number_of_text_only_reviews() == page['edition_text_only_review_count']
+
 
 def get_test_partial(file):
     test_file = os.path.join(get_test_data_path('partials'), file)
