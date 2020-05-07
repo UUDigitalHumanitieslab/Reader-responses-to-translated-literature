@@ -77,18 +77,27 @@ class ReviewPageParser:
             review.rating = self.get_text_or_none(review_html.find('span', class_='staticStar'))
             if review.text:
                 try:
-                    review.language = detect(review.text)
+                    review.language = detect(review.text)                        
                 except LangDetectException:
                     # langdetect can't deal with texts that consist of only things like
                     # '3.5-4/5', or '(...) 6/10'
                     review.language = 'UNKNOWN'
+            else:
+                # handle the rare case where there is a reviewText element but no actual text
+                review.language = 'UNKNOWN'
             reviews.append(review)
         return reviews        
 
     def extract_review(self, review_text_elem):
-        container = review_text_elem.find('span', class_='readable')
+        container = review_text_elem.find('span', class_='readable')        
+        spans = container.find_all('span')
         # always extract the text from the last <span>.
-        return self.get_text_or_none(container.find_all('span')[-1])
+        # There are rare cases when there is a <div> with 'reviewText' class in the HTML,
+        # without there actually being any text in the field. Ignore those.
+        if spans:
+            return self.get_text_or_none(spans[-1])
+        else:
+            return None
 
     def get_text_or_none(self, field):
         if field: return remove_whitespace(field.get_text(' '))

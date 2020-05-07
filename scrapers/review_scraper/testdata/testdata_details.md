@@ -37,3 +37,7 @@ Rating 5, page 4: A typical page with 30 reviews.
 Rating 5, page 10: The two very last reviews (i.e. with text), supplemented with 28 ratings.
 
 Rating 2, page 1: Has only one 2 star rating (!), none with text. Is supplemented with first two ratings (to fill the width of a written review), and then a wild mix of reviews and ratings (4 and 5 stars)
+
+### Lost Symbol
+
+`7947003-the-lost-symbol_8` was added later to verify a bugfix. This is a page of reviews that contains the rare case where there is a `div` with the class `reviewText`, but it does not actually contain text. (Note that typical cases of a rating - a review without text - do not have the element.)
