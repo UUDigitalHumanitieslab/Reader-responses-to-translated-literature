@@ -158,8 +158,6 @@ def test_get_reviews_field_content():
             assert r.url is not None
             assert r.date is not None
             assert r.author is not None
-            if r.language is None:
-                print(vars(r))
             assert r.language is not None
             # rating, surprisingly, can be None
             # text, even more surprisingly, can be None in rare cases, see #15
