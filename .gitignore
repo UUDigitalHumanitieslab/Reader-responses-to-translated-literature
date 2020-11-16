@@ -7,3 +7,5 @@
 /XML
 /CSV
 *.csv
+/embeddings/embeddings
+/embeddings/.env
