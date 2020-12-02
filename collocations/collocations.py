@@ -4,7 +4,7 @@ from nltk.corpus import stopwords
 import re
 from math import log
 
-reviews_path = 'embeddings/data/reviews_about_translation.csv'
+reviews_path = '../data/reviews_about_translation.csv'
 out_path = 'collocations.txt'
 
 # import reviews

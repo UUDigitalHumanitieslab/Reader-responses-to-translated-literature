@@ -3,7 +3,7 @@ from train.corpus_reader import ReviewCorpus, BrownCorpus
 from train.train_embeddings import train
 from gensim import models
 
-CORPUS_PATH = "data/reviews_english.csv"    #corpus location
+CORPUS_PATH = "../data/reviews_english.csv"    #corpus location
 DST_DIR = "embeddings"                      #directory for embeddings
 FILENAME = "with_pretraining"               #name of embeddings file
 
