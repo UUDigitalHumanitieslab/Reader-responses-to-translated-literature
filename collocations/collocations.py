@@ -1,65 +1,37 @@
 import csv
-from nltk.tokenize import sent_tokenize, word_tokenize
-from nltk.corpus import stopwords
 import re
 from math import log
 
-reviews_path = '../data/reviews_about_translation.csv'
-out_path = 'collocations.txt'
+reviews_path = './data/reviews_about_translation_tokenised.csv'
+out_path = './data/collocations.txt'
 
 # import reviews
 
 with open(reviews_path) as csvfile:
     reader = csv.DictReader(csvfile)
-    reviews = [row["text"] for row in reader]
-
-# preprocessing
-
-stops = set(stopwords.words("english"))
-stops.add("'s")
-stops.add("n't")
-stops.add("'m")
-
-def process_sent(sent):
-    words = [w.lower() for w in word_tokenize(sent)]
-
-    def include(word):
-        if not re.search(r'\w', word):
-            return False
-        if word in stops:
-            return False
-        return True
-
-    filtered_words = [w for w in words if include(w)]
-    return filtered_words
-
-def process_review(review):
-    sents = sent_tokenize(review)
-    return [process_sent(s) for s in sents]
-
-processed_reviews = [process_review(r) for r in reviews]
-
-vocab = set(word for review in processed_reviews for sent in review for word in sent)
+    reviews_text = (row["tokenised_text"] for row in reader)
+    reviews = [review.split() for review in reviews_text]
 
 # frequencies
+
+vocab = set(word for review in reviews for word in review)
 
 def count_words():
     counts_general = {word: 0 for word in vocab}
     counts_translat =  {word: 0 for word in vocab}
     translat_pat = r'^translat'
-    window = 5
+    window = 4
 
-    for review in processed_reviews:
-        for sent in review:
-            for i, word in enumerate(sent):
-                counts_general[word] += 1
+    for review in reviews:
+        for i, word in enumerate(review):
+            counts_general[word] += 1
 
-                if re.search(translat_pat, word):
-                    preceding = [sent[j] for j in range(i - window, i) if j >= 0]
-                    following = [sent[j] for j in range(i + 1, i + 1 + window) if j < len(sent)]
+            if re.search(translat_pat, word):
+                preceding = [review[j] for j in range(i - window, i) if j >= 0]
+                following = [review[j] for j in range(i + 1, i + 1 + window) if j < len(review)]
 
-                    for neighbour in preceding + following:
-                        counts_translat[neighbour] += 1
+                for neighbour in preceding + following:
+                    counts_translat[neighbour] += 1
 
     return counts_translat, counts_general
 
@@ -91,8 +63,10 @@ def sort_by_frequency(counts):
 
 ranking = sort_by_frequency(rel_freq)
 
+print(ranking[:50])
+
 #export
 with open(out_path, 'w') as outfile:
-    for i in range(50):
+    for i in range(100):
         outfile.write(ranking[i])
         outfile.write('\n')
