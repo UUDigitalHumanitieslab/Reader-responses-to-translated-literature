@@ -1,10 +1,18 @@
 import spacy
 
 class Tokeniser:
-    def __init__(self, language):
+    def models():
         models = {
-            "english" : "en_core_web_sm"
+            "english" : "en_core_web_sm",
+            "dutch" : "nl_core_news_sm"
         }
+        return models
+
+    def available_languages():
+        return set(Tokeniser.models().keys())
+
+    def __init__(self, language):
+        models = Tokeniser.models()
         self.nlp = spacy.load(models[language])
 
     def process(self, review: str, lemmatise = True, filter_stopwords = True):
