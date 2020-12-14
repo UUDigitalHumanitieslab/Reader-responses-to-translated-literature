@@ -4,7 +4,12 @@ class Tokeniser:
     def models():
         models = {
             "english" : "en_core_web_sm",
-            "dutch" : "nl_core_news_sm"
+            "dutch" : "nl_core_news_sm",
+            "french" : "fr_core_news_sm",
+            "german" : "de_core_news_sm",
+            "italian" : "it_core_news_sm",
+            "portuguese" : "pt_core_news_sm",
+            "spanish" : "es_core_news_sm"
         }
         return models
 
@@ -15,7 +20,7 @@ class Tokeniser:
         models = Tokeniser.models()
         self.nlp = spacy.load(models[language])
 
-    def process(self, review: str, lemmatise = True, filter_stopwords = True):
+    def process(self, review: str, lemmatise = True, filter_stopwords = True, filter_ne = True):
         doc = self.nlp(review)
 
         # filter punctuation and digits
@@ -31,7 +36,9 @@ class Tokeniser:
         is_not_stopword = lambda token: token.is_stop == False
 
         # apply all filters
-        filters = [is_alpha, is_not_NE]
+        filters = [is_alpha]
+        if filter_ne:
+            filters.append(is_not_NE)
         if filter_stopwords:
             filters.append(is_not_stopword)
         filtered_tokens = [token for token in doc if all(f(token) for f in filters)]

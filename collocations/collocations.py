@@ -2,14 +2,16 @@ import csv
 import re
 from math import log
 
-reviews_path = './data/reviews_about_translation_tokenised.csv'
-out_path = './data/collocations.txt'
+reviews_path = './data/goodreads_tokenised.csv'
+language = 'dutch'
+target_pattern = r'^vertaa?l'
+out_path = './data/collocations_{}.txt'.format(language)
 
 # import reviews
 
 with open(reviews_path) as csvfile:
     reader = csv.DictReader(csvfile)
-    reviews_text = (row["tokenised_text"] for row in reader)
+    reviews_text = (row["tokenised_text"] for row in reader if row["language"] == language)
     reviews = [review.split() for review in reviews_text]
 
 # frequencies
@@ -19,14 +21,13 @@ vocab = set(word for review in reviews for word in review)
 def count_words():
     counts_general = {word: 0 for word in vocab}
     counts_translat =  {word: 0 for word in vocab}
-    translat_pat = r'^translat'
     window = 4
 
     for review in reviews:
         for i, word in enumerate(review):
             counts_general[word] += 1
 
-            if re.search(translat_pat, word):
+            if re.search(target_pattern, word):
                 preceding = [review[j] for j in range(i - window, i) if j >= 0]
                 following = [review[j] for j in range(i + 1, i + 1 + window) if j < len(review)]
 
