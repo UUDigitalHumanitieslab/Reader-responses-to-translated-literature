@@ -10,3 +10,4 @@
 /embeddings/embeddings
 /embeddings/.env
 /embeddings/eval/questions-words.txt
+/data/
