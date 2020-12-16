@@ -1,7 +1,8 @@
 import csv
 from preprocessing.tokeniser import Tokeniser
+from tqdm import tqdm
 
-REVIEWS_FILE = './data/reviews_dutch.csv'
+REVIEWS_FILE = './data/goodreads.csv'
 
 with open(REVIEWS_FILE) as infile:
     outpath = REVIEWS_FILE[:-4] + '_tokenised.csv'
@@ -16,7 +17,7 @@ with open(REVIEWS_FILE) as infile:
         tokenisers = {}
         available_languages = Tokeniser.available_languages()
 
-        for row in reader:    
+        for row in tqdm(reader):    
             #check language and initialise tokeniser if needed
             language = row['language'].lower()
             if language in tokenisers:
@@ -33,7 +34,9 @@ with open(REVIEWS_FILE) as infile:
                 text = row['text'] 
                 tokens = t.process(text)
                 tokenised_text = ' '.join(tokens)
-                
-                #write
                 row['tokenised_text'] = tokenised_text
-                writer.writerow(row)
+            else:
+                row['tokenised_text'] = ''
+                
+            #write
+            writer.writerow(row)
