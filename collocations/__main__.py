@@ -1,15 +1,6 @@
 from collocations.collocations import collocate
+from collocations.patterns import LANGUAGES_PATTERNS
 
-languages_patterns = {
-    'dutch' :  r'^vertaa?l',
-    'english' : r'^translat',
-    'french' : r'^tradu',
-    'german' : r'[uü]bersetz',
-    'italian' : r'^tradu',
-    'portuguese' : r'^tradu',
-    'spanish' : r'^tradu',
-}
-
-for language, pattern in languages_patterns.items():
+for language, pattern in LANGUAGES_PATTERNS.items():
     if pattern:
         collocate(language, pattern)
