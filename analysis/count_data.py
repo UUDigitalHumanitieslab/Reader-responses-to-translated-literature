@@ -6,7 +6,7 @@ from collections import defaultdict
 from collocations.patterns import LANGUAGES_PATTERNS
 
 WORDS_PATH = './data/word_classes.csv'
-INPUT_FACTORS = ['original_language', 'edition_language', 'language', 'age_category', 'book_genre', 'rating_no']
+INPUT_FACTORS = ['original_language', 'edition_language', 'book_title', 'language', 'age_category', 'book_genre', 'rating_no']
 WINDOW_SIZE = 4
 
 def read_categories(words_path):
@@ -72,7 +72,7 @@ def mentions_translation(text, language):
     if language in LANGUAGES_PATTERNS:
         pattern = LANGUAGES_PATTERNS[language]
         words = text.split()
-        return any(re.search(pattern, word) for word in words)
+        return str(int(any(re.search(pattern, word) for word in words)))
     else:
         return None
 
@@ -86,17 +86,19 @@ def count_data_per_review(reviews_path):
 
         def review_data(row):
             input_data = { factor : row[factor] for factor in INPUT_FACTORS}
-            is_translated = row['original_language'] != row['edition_language']
+            is_translated = int(row['original_language'] != row['edition_language'])
             mentions = mentions_translation(row['tokenised_text'], row['language'].lower())
+            words = len(row['tokenised_text'].split())
             data = {
                 **input_data,
                 'is_translated': is_translated,
                 'mentions_translation': mentions,
+                'words': words
             }
             return data
         
         all_data = [review_data(row) for row in reader]
 
 
-    df = pd.DataFrame(all_data, columns = INPUT_FACTORS + ['is_translated', 'mentions_translation'])
+    df = pd.DataFrame(all_data, columns = INPUT_FACTORS + ['is_translated', 'mentions_translation', 'words'])
     return df
