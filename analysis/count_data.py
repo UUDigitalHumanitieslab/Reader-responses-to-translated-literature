@@ -76,6 +76,14 @@ def mentions_translation(text, language):
     else:
         return None
 
+def count_translation_mentions(text, language):
+    if language in LANGUAGES_PATTERNS:
+        pattern = LANGUAGES_PATTERNS[language]
+        words = text.split()
+        return str(sum(1 for word in words if re.search(pattern, word)))
+    else:
+        return None    
+
 def count_data_per_review(reviews_path):
     '''Create table with one row for each review. Similar to the 
     readit output, but  but with some extra info. We also ignore some
@@ -88,11 +96,13 @@ def count_data_per_review(reviews_path):
             input_data = { factor : row[factor] for factor in INPUT_FACTORS}
             is_translated = int(row['original_language'] != row['edition_language'])
             mentions = mentions_translation(row['tokenised_text'], row['language'].lower())
+            mention_count = count_translation_mentions(row['tokenised_text'], row['language'].lower())
             words = len(row['tokenised_text'].split())
             data = {
                 **input_data,
                 'is_translated': is_translated,
                 'mentions_translation': mentions,
+                'mention_count': mention_count,
                 'words': words
             }
             return data
@@ -100,5 +110,5 @@ def count_data_per_review(reviews_path):
         all_data = [review_data(row) for row in reader]
 
 
-    df = pd.DataFrame(all_data, columns = INPUT_FACTORS + ['is_translated', 'mentions_translation', 'words'])
+    df = pd.DataFrame(all_data, columns = INPUT_FACTORS + ['is_translated', 'mentions_translation', 'mention_count', 'words'])
     return df

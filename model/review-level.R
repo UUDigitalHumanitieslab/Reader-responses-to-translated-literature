@@ -13,6 +13,10 @@ min_review_length = function(data, min_length = 1) {
   subset(data, data$words >= min_length)
 }
 
+only_translated = function(data) {
+  subset(data, data$is_translated)
+}
+
 # counting functions
 
 count_translation_mentions = function(data, absolute = FALSE) {
@@ -23,6 +27,15 @@ count_translation_mentions = function(data, absolute = FALSE) {
   else {
     return(sum(values)/length(values))
   }
+}
+
+translation_frequency = function(data) {
+  all_data = subset(data, data$words >= 10)
+  mention_data = subset(all_data, as.logical(all_data$mentions_translation))
+  total_mentions = sum(mention_data$mention_count) #to do: add column with count instead of bool
+  total_words = sum(all_data$words)
+  
+  total_mentions / total_words
 }
 
 count_reviews = function(data) {
@@ -103,14 +116,46 @@ edlang_table = function(data) {
 
 # rating vs mentioning of translation
 
+
 ratings = 1:5
-rating_data = data.frame(
-  rating = ratings,
-  n_reviews = sapply(ratings, function(rating) {nrow(subset(data, data$rating_no == rating))}),
-  p_mention_translation = sapply(ratings, function(rating) {count_translation_mentions(subset(data, data$rating_no == rating))})
+
+rating_data = rbind(
+  data.frame(
+    is_translated = rep("translated", length(ratings)),
+    rating = ratings,
+    n_reviews = sapply(ratings, 
+                       function(r) {
+                         nrow(subset(data, data$rating_no == r & data$is_translated))
+                       }),
+    translation_freq = sapply(ratings,
+                                   function (r) {
+                                     translation_frequency(subset(data, data$rating_no == r & data$is_translated))
+                                   })
+    ),
+  data.frame(
+    is_translated = rep("not translated", length(ratings)),
+    rating = ratings,
+    n_reviews = sapply(ratings, 
+                       function(r) {
+                         nrow(subset(data, data$rating_no == r & ! data$is_translated))
+                       }),
+    translation_freq = sapply(ratings,
+                                   function (r) {
+                                     translation_frequency(subset(data, data$rating_no == r & ! data$is_translated))
+                                   })
+  )
 )
+rating_data
+
+#plot
 
 p = ggplot(data = rating_data) +
-  geom_line(aes(x = rating, y = p_mention_translation))
+  geom_line(aes(x = rating, y = translation_freq, color = is_translated), size = 1) +
+  ylim(c(0, NA)) +
+  labs(x = "rating", y = "frequency of 'translation'", color = "edition")
 p
-  
+
+#model
+
+mention_model = glm(mentions_translation ~ rating_no * is_translated, data, family = binomial)
+summary(mention_model)
