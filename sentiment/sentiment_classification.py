@@ -1,12 +1,12 @@
 import openpyxl
 import pandas as pd
 
-languages = ['English', 'Dutch', 'French', 'German', 'Italian', 'Portuguese', 'Spanish']
+LANGUAGES = ['English', 'Dutch', 'French', 'German', 'Italian', 'Portuguese', 'Spanish']
 
 def create_dataframes(infile):
     wb = openpyxl.load_workbook(filename=infile)
     sheet_names = wb.sheetnames
-    for lang in languages:
+    for lang in LANGUAGES:
         # find all sheets of the language, but don't use the non-annotated ones
         lang_sheets = [s for s in sheet_names if s.startswith(lang) and len(s)>len(lang)]
         out_df = pd.DataFrame()
@@ -17,7 +17,7 @@ def create_dataframes(infile):
             if i==0:
                 out_df['word'] = df['Word']
             out_df[key] = df.apply(lambda x: sentiment_classification(x['Category']), axis=1)
-        out_df.to_csv('{}_ratings.csv'.format(lang))
+        out_df.to_csv('{}_ratings.csv'.format(lang), index=False)
                 
 
 def sentiment_classification(label):
