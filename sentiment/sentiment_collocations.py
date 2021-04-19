@@ -15,7 +15,7 @@ LANGUAGES_PATTERNS = {
 LANGUAGES = ['English', 'Dutch', 'German']
 SENTIMENTS_FILE = 'collocations_sentiments.csv'
 WINDOW_SIZE = 4
-INPUT_FACTORS = ['id', 'original_language', 'edition_language', 'book_title', 'language', 'age_category', 'book_genre', 'rating_no']
+INPUT_FACTORS = ['id', 'original_language', 'edition_language', 'book_title', 'language', 'age_category', 'book_genre', 'rating_no', 'is_translated', 'mention_count']
 
 def create_lemma_valence_list():
     output_list = []
@@ -50,4 +50,3 @@ def count_sentiments(reviews_file):
             output = pd.DataFrame(data, index=[i])
             output.to_csv('reviews_PHN.csv', mode='a', header=write_header)
             write_header = False
-            
