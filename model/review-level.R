@@ -1,6 +1,7 @@
 library(lme4)
 library(ggplot2)
 library(reshape2)
+library(dplyr)
 
 # import data
 
@@ -74,7 +75,7 @@ full_table = function(data) {
     }
   }
   
-  res
+  return(res)
 }
 
 oglang_table = function(data) {
@@ -92,7 +93,7 @@ oglang_table = function(data) {
       res = rbind(res, new_row)
   }
   
-  res
+  return(res)
 }
 
 edlang_table = function(data) {
@@ -110,8 +111,10 @@ edlang_table = function(data) {
     res = rbind(res, new_row)
   }
   
-  res
+  return(res)
 }
+
+editions <- edlang_table(table)
 
 
 # rating vs mentioning of translation
@@ -149,13 +152,95 @@ rating_data
 
 #plot
 
-p = ggplot(data = rating_data) +
+ggplot(data = rating_data) +
   geom_line(aes(x = rating, y = translation_freq, color = is_translated), size = 1) +
   ylim(c(0, NA)) +
   labs(x = "rating", y = "frequency of 'translation'", color = "edition")
-p
 
 #model
 
 mention_model = glm(mentions_translation ~ rating_no * is_translated, data, family = binomial)
 summary(mention_model)
+
+rating_data_test <- data %>% filter(!is.na(mentions_translation), !is.na(rating_no), words>10) %>%
+  group_by(rating_no, is_translated) %>%
+  mutate(is_translated = ifelse(is_translated == 0, "not translated", "translated")) %>%
+  add_tally() %>%
+  summarise_at(.vars=c('n', 'mention_count'), .funs=c(mean="mean",sum="sum")) %>%
+  select(-c('n_sum')) %>% rename(n=n_mean)
+
+ggplot(data = rating_data_test) +
+  geom_line(aes(x = rating_no, y = mention_count_mean, color = is_translated), size = 1) +
+  ylim(c(0, NA)) +
+  labs(title="Ungrouped reviews", x = "Goodreads rating", y = "Average count of translation lemma per review", color = "Translated")
+
+
+by_edition <- data %>% filter(!is.na(mentions_translation), !is.na(rating_no), words>10) %>%
+              group_by(edition_language, rating_no, is_translated) %>%
+              mutate(is_translated = ifelse(is_translated == 0, "not translated", "translated")) %>%
+              add_tally() %>%
+              summarise_at(.vars=c('n', 'mention_count'), .funs=c(mean="mean",sum="sum")) %>%
+              select(-c('n_sum')) %>% rename(n=n_mean)
+
+ggplot(data=by_edition) + 
+  geom_line(aes(x=rating_no, y=mention_count_mean, color=is_translated), size=1) +
+  ylim(c(0, NA)) +
+  labs(title="Edition language", x = "Goodreads rating", y = "Average count of translation lemma per review", color = "Translated") + 
+  facet_grid(edition_language ~ .)
+
+by_original <- data %>% filter(!is.na(mentions_translation), !is.na(rating_no), words>10) %>%
+              group_by(original_language, rating_no, is_translated) %>%
+              mutate(is_translated = ifelse(is_translated == 0, "not translated", "translated")) %>%
+              add_tally() %>%
+              summarise_at(.vars=c('n', 'mention_count'), .funs=c(mean="mean",sum="sum")) %>%
+              select(-c('n_sum')) %>% rename(n=n_mean)
+
+ggplot(data=by_original) + 
+  geom_line(aes(x=rating_no, y=mention_count_mean, color=is_translated), size=1) +
+  ylim(c(0, NA)) +
+  labs(title="Original language", x = "Goodreads rating", y = "Average count of translation lemma per review", color = "Translated") +  
+  facet_grid(original_language ~ .)
+
+by_genre <- data %>% filter(!is.na(mentions_translation), !is.na(rating_no), !grepl('Non', book_genre)) %>%
+              mutate(book_genre = ifelse(grepl('Literary', book_genre), "Literary fiction", "Popular fiction")) %>%
+              group_by(book_genre, rating_no, is_translated) %>%
+              mutate(is_translated = ifelse(is_translated == 0, "not translated", "translated")) %>%
+              add_tally() %>%
+              summarise_at(.vars=c('n', 'mention_count'), .funs=c(mean="mean",sum="sum")) %>%
+              select(-c('n_sum')) %>% rename(n=n_mean)
+
+ggplot(data=by_genre) + 
+  geom_line(aes(x=rating_no, y=mention_count_mean, color=is_translated), size=1) +
+  ylim(c(0, NA)) +
+  labs(title="Book genre", x = "Goodreads rating", y = "Average count of translation lemma per review", color = "Translated") + 
+  facet_grid(book_genre ~ .)
+
+levels(by_genre$is_translated)
+
+numbers <- data %>% filter(!is.na(mentions_translation), !is.na(is_translated)) %>%
+  group_by(mentions_translation, is_translated) %>%
+  tally()
+
+from_english <- data %>% filter(!is.na(mentions_translation), !is.na(rating_no), grepl('English', original_language)) %>%
+  group_by(rating_no, is_translated) %>%
+  mutate(is_translated = ifelse(is_translated == 0, "not translated", "translated")) %>%
+  add_tally() %>%
+  summarise_at(.vars=c('n', 'mention_count'), .funs=c(mean="mean",sum="sum")) %>%
+  select(-c('n_sum')) %>% rename(n=n_mean)
+
+ggplot(data=from_english) + 
+  geom_line(aes(x=rating_no, y=mention_count_mean, color=is_translated), size=1) +
+  ylim(c(0, NA)) +
+  labs(title="Books originally published in English", x = "Goodreads rating", y = "Average count of translation lemma per review", color = "Translated")
+
+to_english <- data %>% filter(!is.na(mentions_translation), !is.na(rating_no), grepl('English', edition_language)) %>%
+  group_by(rating_no, is_translated) %>%
+  mutate(is_translated = ifelse(is_translated == 0, "not translated", "translated")) %>%
+  add_tally() %>%
+  summarise_at(.vars=c('n', 'mention_count'), .funs=c(mean="mean",sum="sum")) %>%
+  select(-c('n_sum')) %>% rename(n=n_mean)
+
+ggplot(data=to_english) + 
+  geom_line(aes(x=rating_no, y=mention_count_mean, color=is_translated), size=1) +
+  ylim(c(0, NA)) +
+  labs(title="Books published in English", x = "Goodreads rating", y = "Average count of translation lemma per review", color = "Translated")

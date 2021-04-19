@@ -7,7 +7,9 @@
 /XML
 /CSV
 *.csv
+/model/.R*
 /embeddings/embeddings
 /embeddings/.env
 /embeddings/eval/questions-words.txt
 /data/
+/sentiment/*.csv
