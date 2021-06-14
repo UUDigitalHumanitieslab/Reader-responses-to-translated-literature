@@ -2,11 +2,28 @@ library(lme4)
 library(ggplot2)
 library(reshape2)
 library(dplyr)
+library(rstatix) # requires "coin" library, too
+library(Hmisc)
 
 # import data
 
 input_path = "../data/goodreads_review_data.csv"
 data = read.csv(input_path)
+
+#### test if translated books have different star rating than non-translated
+describe(subset(data, is_translated==1)$rating_no)
+# mean 3.786, poprortion 1 0.058 2 0.101 3 0.192 4 0.296 5 0.354
+describe(subset(data, is_translated==0)$rating_no)
+# mean 3.85 proportion 1 0.059 2 0.091 3 0.175 4 0.293 5 0.383
+
+
+wilcox.test(subset(data, is_translated==1)$rating_no, 
+            subset(data, is_translated==0)$rating_no,
+            alternative = "two.sided")
+# significant difference
+
+data %>% wilcox_effsize(rating_no ~ is_translated)
+# but small effect size
 
 # filters
 
