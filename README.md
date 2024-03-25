@@ -1,7 +1,8 @@
 # Reader responses to translated literature
 
 This repository contains code for the [DIOPTRA-L](https://cdh.uu.nl/portfolio/digital-opinions-on-translated-literature-dioptra-l-2/) project by Haidee Kotze, Gys-Walt van Egdom, Corina Koolen and Utrecht University's Research Software Lab, and can be used to reproduce the publication
-Kotze, Haidee & Janssen, Berit & Koolen, Corina & Plas, Luka & Egdom, Gys-Walt. (2021). Norms, affect and evaluation in the reception of literary translations in multilingual online reading communities: Deriving cognitive-evaluative templates from big data. Translation, Cognition & Behavior. 4. 10.1075/tcb.00060.kot.
+
+Kotze, Haidee & Janssen, Berit & Koolen, Corina & Plas, Luka & Egdom, Gys-Walt. (2021). _Norms, affect and evaluation in the reception of literary translations in multilingual online reading communities: Deriving cognitive-evaluative templates from big data._ Translation, Cognition & Behavior. 4. 10.1075/tcb.00060.kot.
 
 ## Prerequisites
 ### Python
