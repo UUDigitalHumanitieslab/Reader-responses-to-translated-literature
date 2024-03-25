@@ -1,0 +1,27 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.0.0
+title: Reader-responses-to-translated-literature
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - name: 'Research Software Lab, Centre for Digital Humanities, Utrecht University'
+    website: 'https://cdh.uu.nl/centre-for-digital-humanities/research-software-lab/'
+    city: Utrecht
+    country: NL
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.10868077
+repository-code: 'https://github.com/UUDigitalHumanitieslab/Reader-responses-to-translated-literature'
+abstract: >-
+  This repository contains code for the DIOPTRA-L project by Haidee Kotze, Gys-Walt van Egdom, Corina Koolen and Utrecht University's Research Software Lab.
+keywords:
+  - speech
+  - prosody
+  - classification
+license: MIT
+version: 0.0.1
+date-released: '2024-03-25'
